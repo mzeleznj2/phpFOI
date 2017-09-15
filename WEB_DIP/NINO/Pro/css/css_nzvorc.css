@@ -1,0 +1,260 @@
+
+body{
+    width: 100%;
+    background-color: #d9d9e9;
+    box-sizing: border-box;
+    margin: 0; 
+    font-family: Lato;
+}
+
+header{
+    font-family: Helvetica Neue;
+    font-size: xx-large;
+    color: #ffffff;
+    
+    background-color: #30303f; 
+    background-image: url('../img/parking.gif');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    
+    padding-top: 27px;
+    padding-bottom: 20px;
+    padding-left:  55px;
+    
+    width: 100%;   
+}
+
+.karta{
+    margin-left:  auto;
+    margin-right:  auto;
+    width: 400px;
+
+}
+
+table{ 
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+hr.jedan, hr.dva, hr.tri{
+    background-color:  #30303f;
+    border: none;
+    height: 3px;
+    margin-bottom:  2px;
+    margin-top:  1px;
+}
+hr.dva{
+    height: 2px; 
+    margin-top:  2px;
+}
+hr.tri{
+    height: 1px;
+    margin-top:  3px;
+    margin-bottom: 0px;
+}
+nav#meni{
+    display: inline-block;   
+    width: 280px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: -12px;
+    height: 85%;
+    background-color: #30303f;
+}
+
+#meni > ul {
+    list-style: none;
+    line-height: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.user{
+    background: none repeat scroll 0 0 #004860;
+    border-top: 2px solid #d9d9e9;
+    border-bottom: 2px solid #d9d9e9;
+    color: #ffffff;
+    display: block;
+    padding: 12px 20px;
+    font-family: Lato;
+    font-size: 15px;
+
+}
+#meni > ul li .nista{
+    background-color: #004860;
+    border-color: #000000;
+    border-bottom: 0px;
+    border-width: 0px;
+    color: #ffffff;
+    display: inline;
+    padding: 0px;
+    font-family: Lato;
+    font-size: 15px;
+    text-transform: none;
+}
+
+#meni > ul li a {
+    background: none repeat scroll 0 0 #30303f;
+    border-color: #000000;
+    border-bottom: 1px dotted #d9d9e9;
+    border-width: 1px;
+    color: #ffffff;
+    display: block;
+    padding: 12px 25px;
+    font-family: Lato;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+#meni > ul li a:hover {
+    color: #ffffff;
+    background-color: #60607a;
+    text-decoration-style: wavy;
+}
+
+#meni > ul li a:active {
+    color: #000000;
+    background-color: #AAAAAA;
+}
+
+#meni > ul li:first-child a{
+    border-top: 1px solid #d9d9e9;
+    border-bottom: 1px dotted #d9d9e9;
+}
+
+#meni > ul li:last-child a{
+    border-bottom: 1px dotted #d9d9e9;
+}
+
+#meni > ul li:first-child .nista{
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#meni > ul li .nista:hover {
+    color: #ffffff;
+    background-color: #004860;
+}
+
+footer {
+    background-color: #30303f;
+    text-align: center;
+    text-decoration: inherit;
+    color: #ffffff;
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 0px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+}
+
+footer > adress > a:visited,
+footer > adress > a{
+    color: #ffffff;
+}
+
+section#sadrzaj{
+    padding: 2px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    float: left; 
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.forma{
+    margin-left: 5%;
+    width: 100%;
+}
+
+.forma2{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.naslov {
+    color: #3a3b4e;
+    font-size: 20px;
+    font-family: Lato;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.podnaslov{
+    color: #e4433c;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width : 1050px) and (min-width : 100px) {
+    section#sadrzaj{
+        width:60%;        
+    }
+    
+    form{
+        width: 65%;
+    }
+    
+    .forma{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 750px) and (min-width : 100px) {
+    nav#meni{  
+        width:80%;
+        margin-left: 10%;  
+        height: auto;
+    }
+    
+    #meni > ul {
+        text-align: left;
+    }
+    
+    #meni > ul li a {
+        padding-left: 30%;
+    }
+    
+    section#sadrzaj{
+        width:80%;
+        margin-left: 10%;  
+    }
+    
+    form, .forma {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width : 450px) and (min-width : 100px) {
+    header {
+        font-size: x-large;
+        padding-top: 35px;
+    }
+    
+    nav#meni{
+        width:80%;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+    
+    #meni > ul {
+        width: 100%;
+    }
+    
+    #meni > ul li a {
+        padding-left: 15%;
+    }
+}

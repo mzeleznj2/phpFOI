@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Popis proizvoda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name ="Krešimir Zelenika" content="Stranica opisa proizvoda">
+		<link rel="stylesheet" type="text/css" href="css/kzelenik.css">
+<!-- jQuery lib -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- datatable lib -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.js"></script>
+
+        <!-- jqueryUI -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/kzelenik_jquery.js"></script>
+    </head>
+    <body id="b">
+        <header>
+            <h3 class="marquee"><span style="color: white; padding-top: 5px;">Dobrodošli na stranicu popisa proizvoda!</span></h3>
+            <img src="slike/logo.png" alt="logo" usemap="#logomap" style=" width:auto; height:auto; box-shadow: 0px 0px 0px;">
+			<map name="logomap">
+				<area shape="rect" coords="0,0,110,100" href="index.html" alt= "Početna stranica" target ="_blank">
+				<area shape="rect" coords="110,0,370,100" href="index.html#autor" alt = "O autoru">
+			</map>
+        </header><br>
+        <nav id="navi">
+			<div>
+                <button onclick="location.href ='index.html'">Početna</button><br>
+                <button onclick="location.href ='proizvod.html'">Opis proizvoda</button><br>
+                <button onclick="location.href ='registracija.html'">Registracija</button><br>
+                <button onclick="location.href ='prijava.html'">Prijava</button><br>
+                <button onclick="location.href ='novi_proizvod.html'">Dodavanje proizvoda</button><br>
+                <button onclick="location.href ='popis_proizvoda.html'">Popis proizvoda</button><br>
+				<button onclick="location.href ='era.html'">Era dijagram</button><br>
+				<button onclick="location.href ='navigacijski.html'">Navigacijski dijagram</button>
+			</div>
+        </nav>
+		<br>
+        <section id ="sadrzaj">
+            <h3> Ovo je stranica popisa proizvoda</h3><br>
+             <table class="tablica1" id="tablicaaa" class="display">
+                    <thead id="tablica">
+                        <tr id="tablica1_zaglavlje" style="background-color: #e6e6e6;">
+                            <th>Naziv proizvoda</th>
+                            <th>Opis proizvoda</th>
+                            <th>Datum proizvodnje</th>
+                            <th>Vrijeme proizvodnje</th>
+                            <th>Količina proizvodnje</th>
+                            <th>Težina proizvoda</th>
+                            <th>Kategorije proizvoda</th>
+</thead>
+              <tbody class="tablica1">  
+                <tr>
+                  <td><a href="proizvod.html">Suavecito pomada za kosu</a></td>
+                  <td>Suavecito pomada jedinstvenog mirisa ima kremastu konzistencije. 
+                      Topiva je u vodi i ne zahtjeva šamponiranje kako bi se 
+                      uklonila s kose. Češlja se s lakoćom i pruža snažan stisak  
+                      za maksimalnu fleksibilnost frizure. Suavecito Firme pomada 
+                      je čvrsta i ima umjereni sjaj.</td>
+                  <td>8.3.2017</td>
+                  <td>07:05</td>
+                  <td>250</td>
+                  <td>5</td>
+                  <td>Kosa</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Devil's Forest Beard Oil</a></td>
+                  <td>Devil's Forest ulje za bradu. Obnovit će i regenerirati kožu i bradu, 
+						štiteći ih od svih štetnih vanjskih utjecaja. 
+						Brzo se upija i uistinu djeluje sedativno. Mir i stabilnost Vaš su izbor!</td>
+                  <td>1.4.2017</td>
+                  <td>10:05</td>
+                  <td>50</td>
+                  <td>35</td>
+                  <td>Brada</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Rebalancing Shampoo</a></td>
+                  <td>Šampon za masno vlasište. 
+						Normalizira i uravnotežuje vlasište koje proizvodi previše sebuma. 
+						Učinkovito djeluju na smirivanje žlijezde lojnice</td>
+                  <td>10.3.2017</td>
+                  <td>08:05</td>
+                  <td>25</td>
+                  <td>53</td>
+                  <td>Kosa</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Oak Beard Wash</a></td>
+                  <td>Beard Wash prikladan je za sve tipove brada, ali prvenstveno one čiji vlasnici 
+				  cijene njegu vrhunske kvalitete. Uostalom,  brada  ne dolazi u kontakt samo s 
+				  hranom, tekućinom I dimom, podvrgnuta je također odlikovanju proizvodima za njegu 
+				  kao što su vosak I ulje koji tvrdoglavo ostaju na gustoj bradi. </td>
+                  <td>7.12.2016</td>
+                  <td>11:45</td>
+                  <td>150</td>
+                  <td>54</td>
+                  <td>Brada</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Mr Bear Beard Balm Woodland</a></td>
+                  <td>Mr Bear Beard Balm je balzam koji njeguje i definira oblik brade, bez maščenja. 
+				  Ručno je napravljen u Švedskoj, bez kemikalija, alkohola I silikona. Blage je čvrstoće 
+				  i sadrži karate maslac, pčelini vosak, lanolin i eterična ulja. Miris borove šume.</td>
+                  <td>12.12.2016</td>
+                  <td>01:45</td>
+                  <td>10</td>
+                  <td>57</td>
+                  <td>Brada</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Mr Bear Beard Brush</a></td>
+                  <td>Tradicionalna ovalna četka namijenjena je za brkove i bradu. 
+						Proizvedena je od drveta kruške i veprove dlake.
+						Velika je samo 8 cm te idealna za nošenje u đepu hlača ili prsluka.</td>
+                  <td>7.3.2017</td>
+                  <td>11:52</td>
+                  <td>31</td>
+                  <td>23</td>
+                  <td>Pribor</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Reuzel Blue</a></td>
+                  <td>Svestrana pomada visokog sjaja i vrlo jake čvrstoće, proizvod temeljen na bazi vode
+				  koji ti omogućuje  kontrolu snage i stupanj sjaja. 
+				  Suptilan miris vanilije, održava frizuru postojanom cijeli dan. Lako se ispire.</td>
+                  <td>10.2.2017</td>
+                  <td>06:05</td>
+                  <td>23</td>
+                  <td>53</td>
+                  <td>Kosa</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Uppercut Monster Hold</a></td>
+                  <td>Za one koji to vole jako snažno predstavljamo vam Uppercut Deluxe Monster Hold pomadu. 
+				  Dodatno moćna, otporna na znoj  i super za sve stilove.
+				  Utrljaj malu količinu kroz suhe dlanove i prste i stiliziraj po želji.</td>
+                  <td>10.1.2017</td>
+                  <td>09:05</td>
+                  <td>24</td>
+                  <td>54</td>
+                  <td>Kosa</td>
+                </tr>
+                <tr>
+                  <td><a href="proizvod.html">Kent 82T</a></td>
+                  <td>Ručno rađeni češljevi za nježno češljanje kose, bez grebanja vlasišta. 
+				  Kent se ponosi širokom paletom kvalitetnih češljeva I četki za sve tipove frizura 
+				  I kosa a precizna završna obrada jamči sprečavanje ispucalih vrhova.</td>
+                  <td>26.1.2017</td>
+                  <td>09:35</td>
+                  <td>63</td>
+                  <td>32</td>
+                  <td>Pribor</td>
+                </tr> 
+                <tr>
+                  <td><a href="proizvod.html">Uppercut Quiff Roler</a></td>
+                  <td>Uppercut četka za feniranje kratke frizure, idealna za podizanje volumena, 
+						savršena za rockabilly stilove kao pompe ili kokotice.
+						Promjera je 2cm, te ima gumenu oblogu na dršci</td>
+                  <td>23.2.2017</td>
+                  <td>10:52</td>
+                  <td>24</td>
+                  <td>36</td>
+                  <td>Pribor</td>
+                </tr>
+              </tbody>
+             </table>
+        </section><br><br>
+        
+        <footer id="foot">
+                <p> Vrijeme potrebno za rješavanje aktivnog dokumenta: 4 sata.</p>
+                <address>
+                    <b>Kontakt:</b><a href="mailto:kzelenik@foi.hr">Krešimir Zelenika</a>
+                </address>
+                <p><small>&copy;</small>2017. K. Zelenika</p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fpopis_proizvoda.html">
+					<img src="slike/HTML5.png" alt="HTML validator" style=" width: 100px;">
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fkzelenik.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img src="slike/CSS3.png" alt="CSS validator" style=" width: 100px;">
+				</a>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html id="reg">
+    <head>
+    	<title>Stranica s formom za registraciju</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marko Petrlić">
+        <meta name="keywords" content="FOI, WebDiP, Zadaća 3">
+        <link rel="stylesheet" type="text/css" href="css/marpetrli.css">
+    </head>
+    <body>
+		<header>
+			<img src="img/logo.png" alt="Logo">
+			<h1>
+				Zadaća 3
+			</h1>
+		</header>
+		
+		<nav>
+		    <ol>
+		    	<li><a href="index.html">Početna</a></li>
+		    	<li><a href="registracija.html">Registacija</a></li>
+		    	<li><a href="prijava.html">Prijava</a></li>
+		    	<li><a href="registracija_jquery.html">Registracija jquery</a></li>
+		    	<li><a href="korisnici_jquery.html">Korinsici jquery</a></li>
+		    	<li><a href="gen_korisnici_jquery.html">Generirani korisnici jquery</a></li>
+		    </ol>
+		</nav>
+		
+		<section>
+			<h2>
+				Registracija
+			</h2>
+			<form method="POST" action="https://barka.foi.hr/WebDiP/2015/materijali/zadace/ispis_forme.php" id="regForm" name="regForm">
+				<label for="ime" class="lab">Ime: </label>
+				<input type="text" placeholder="Ime" id="ime" name="ime" autofocus="autofocus" class="inp">
+				<br>
+
+				<label for="prezime" class="lab">Prezime: </label>
+				<input type="text" placeholder="Prezime" id="prezime" name="prezime" class="inp">
+				<br>
+
+				<label for="korisnicko_ime" class="lab">Korisničko ime: </label>
+				<input type="text" placeholder="Korisničko ime" id="korisnicko_ime" name="korisnicko_ime" class="inp">
+				<label id="korGre"></label>
+				<br>
+
+				<label for="lozinka" class="lab">Lozinka: </label>
+				<input type="password" placeholder="Lozinka" id="lozinka" name="lozinka" class="inp">
+				<br>
+
+				<label for="p_lozinka" class="lab">Potvrda lozinke: </label>
+				<input type="password" placeholder="Ponovljena lozinka" id="p_lozinka" name="ponovljena_lozinka" class="inp">
+				<br>
+
+				<label for="enkripcija" class="lab">Enkripcija: </label>
+				<keygen id="enkripcija" name="enkripcija" class="inp">
+				<br>
+
+				<label class="lab">Rođendan: </label>
+				<br>
+
+				<label for="dan" class="lab">Dan: </label>
+				<input type="number" placeholder="Dan" id="dan" name="dan" class="inp">
+				<br>
+
+				<label for="mjesec" class="lab">Mjesec: </label>
+				<input list="mjeseci" placeholder="Mjesec" id="mjesec" name="mjesec" class="inp">
+				<datalist id="mjeseci">
+					<option value="Sijecanj">Siječanj</option>
+                    <option value="Veljaca">Veljača</option>
+                    <option value="Ozujak">Ožujak</option>
+                    <option value="Travanj">Travanj</option>
+                    <option value="Svibanj">Svibanj</option>
+                    <option value="Lipanj">Lipanj</option>
+                    <option value="Srpanj">Srpanj</option>
+                    <option value="Kolovoz">Kolovoz</option>
+                    <option value="Rujan">Rujan</option>
+                    <option value="Listopad">Listopad</option>
+                    <option value="Studeni">Studeni</option>
+                    <option value="Prosinac">Prosinac</option>
+				</datalist>
+				<br>
+
+				<label for="godina" class="lab">Godina rođenja: </label>
+				<input type="number" placeholder="Godina" id="godina" name="godina" class="inp">
+				<br>
+
+				<label for="spol" class="lab">Spol: </label>
+				<select id="spol" name="spol" class="inp">
+					<option value="Muski">Muški</option>
+					<option value="Zenski">Ženski</option>
+				</select>
+				<br>
+
+				<label class="lab">Mobilni telefon: </label>
+				<br>
+
+				<label for="drzava" class="lab">Država: </label>
+				<select id="drzava" name="drzava" class="inp">
+					<option value="Austrija">Austrija</option>
+					<option value="Hrvatska">Hrvatska</option>
+					<option value="Slovenija">Slovenija</option>
+				</select>
+				<br>
+
+				<label for="broj" class="lab">Broj </label>
+                <input type="tel" id="broj" name="broj" placeholder="xxx xxxxxxx" class="inp">
+                <br>
+
+                <label for="email" class="lab">Email: </label>
+                <input type="text" id="email" name="email" placeholder="email@email.com" class="inp">
+                <br>
+
+                <label for="robot" class="lab">Dokažite da niste robot</label>
+                <input type="radio" id="robot" name="robot" value="Pozitivno" class="inp">
+                <br>
+
+                <label for="lokacija" class="lab">Lokacija: </label>
+                <br>
+                <textarea id="lokacija" name="lokacija" rows="50" cols="100" class="inp"></textarea>
+                <br>
+
+                <label for="slika" class="lab">Slika: </label>
+                <input type="file" id="slika" name="slika" class="inp">
+                <br>
+
+                <label for="obavijest" class="lab">Obavijesti</label>
+                <input type="radio" id="obavijest" name="obavijest" value="Da" class="inp">
+                <br>
+
+                <input type="submit" id="slanje" name="slanje" value="Pošalji" class="inp">
+                <br>
+
+			</form>
+		</section>
+		
+		<footer style="background-color: yellow;">
+		    Vrijeme potrebno za rješavanje zadatak: 4 sata
+		    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmarpetrli%2Fregistracija.html">
+				<img src="img/HTML5.png" height="50" width="50" alt="HTML5">
+			</a>
+		    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmarpetrli%2Fregistracija.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+				<img src="img/CSS3.png" height="50" width="50" alt="CSS3">
+			</a>
+		</footer>
+		<script type="text/javascript" src="js/marpetrli.js"></script> 
+    </body>
+</html>

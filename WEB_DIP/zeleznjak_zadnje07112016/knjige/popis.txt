@@ -1,0 +1,33 @@
+ Volume in drive D is DATA
+ Volume Serial Number is 7836-2B42
+
+ Directory of D:\xampp\www\zeleznjak\educational\knjige
+
+13.06.2016.  14:21    <DIR>          .
+13.06.2016.  14:21    <DIR>          ..
+13.06.2016.  14:10             7.877 agnesina_ispovijed.jpg
+13.06.2016.  14:10            12.914 blue_moon.jpg
+13.06.2016.  14:11            11.625 bracni_rasplet.jpg
+13.06.2016.  14:11             6.893 brdo.jpg
+13.06.2016.  14:12             7.942 circle.jpg
+13.06.2016.  14:12             6.256 djecak_iz_sjene.jpg
+13.06.2016.  14:13             7.175 dovidjenja.jpg
+13.06.2016.  14:13            11.199 duboki_pad.jpg
+13.06.2016.  14:14            11.471 dudov_svilac.jpg
+13.06.2016.  14:15             7.944 empatija.jpg
+13.06.2016.  14:15            13.756 fatalna_bliskost.jpg
+13.06.2016.  14:16             9.286 grey.jpg
+13.06.2016.  14:17            16.225 hladna_magija.jpg
+13.06.2016.  14:17            14.760 igra_prijestolja.jpg
+13.06.2016.  14:17            13.502 imas_vatre.jpg
+13.06.2016.  14:17            20.067 informaticar_starog_kova.jpg
+13.06.2016.  14:18            10.152 ispovjedna_tajna.jpg
+13.06.2016.  14:18            11.923 javne_tajne.jpg
+13.06.2016.  14:19            15.556 knjiga_cjecanja.jpg
+13.06.2016.  14:18            14.752 knjiga_ljubavi.jpg
+13.06.2016.  14:19            16.729 knjiga_zivota.jpg
+13.06.2016.  14:19            11.615 krvavi_ban.jpg
+13.06.2016.  14:20            13.387 mracna_mjesta.jpg
+13.06.2016.  14:21                 0 popis.txt
+              24 File(s)        273.006 bytes
+               2 Dir(s)  139.522.084.864 bytes free

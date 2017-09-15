@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Korisnici</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Korisnici JQ">
+        <meta name="author" content="Matej Cvitković">    
+        <link href="css/matcvitko.css" rel="stylesheet" type="text/css"> 
+    </head>
+    <body>
+        <header>
+            <h1> Prikaz korisnika </h1>
+        </header>
+
+        <section id="izbornik">
+            <h2 style="display:none"> navigacija </h2>
+            <nav id="navigacija" class="navi">
+                <ul style="list-style-type:square">
+                    <li> <a class="navi" href="index.html"> Početna stranica </a></li>
+                    <li> <a class="navi" href="registracija.html"> Registracija korisnika Javascript</a> </li>   
+                    <li> <a class="navi" href="prijava.html"> Obrazac za prijavu </a> </li>
+                    <li> <a class="navi" href="registracija_jquery.html"> Registracija korisnika  jQuery</a> </li>   
+                    <li> <a class="navi" href="korisnici_jquery.html"> Korisnici  jQuery</a> </li>  
+                    <li> <a class="navi" href="korisnici_dt_jquery.html"> Korisnici Datatables  jQuery</a> </li>  
+                    <li> <a class="navi" href="gen_korisnici_jquery.html"> Korisnici Gen jQuery</a> </li>  
+                </ul>
+            </nav>
+        </section>
+        <section id="sadrzaj" style="margin-bottom: 5%">
+            <h2 style="display:none"> sadrzaj </h2>
+            <table id="korisnici1" style="margin-top:5%">
+                <thead>
+                    <tr>
+                        <th> Br. </th>
+                        <th> Ime </th>
+                        <th> Prezime </th>
+                        <th> Korisničko ime </th>
+                        <th> Lozinka </th>
+                        <th> Rođendan </th>
+                        <th> Spol </th>
+                        <th> Mobitel </th>
+                        <th> E-mail </th>
+                        <th> Lokacija </th>
+                        <th> Slika </th>
+                        <th> Obavijesti </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1. </td>
+                        <td> Matej </td>
+                        <td> Cvitković </td>
+                        <td> Cvitka </td>
+                        <td> qwertz1234</td>
+                        <td> 05.travnja.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> matcvitko@foi.hr </td>
+                        <td> Sesvete </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 2. </td>
+                        <td> Marija </td>
+                        <td> Getoš </td>
+                        <td> mare </td>
+                        <td> sfdgsgsd</td>
+                        <td> 23.svibnja.1991.</td>
+                        <td> Žensko </td>
+                        <td> +385 98 541 7139 </td>
+                        <td> marget@efos.hr </td>
+                        <td> Čepin </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Isključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 3. </td>
+                        <td> Josip </td>
+                        <td> Čuljak </td>
+                        <td> Joža </td>
+                        <td> qwrfbv </td>
+                        <td> 22.ožujka.1993.</td>
+                        <td> Muški </td>
+                        <td> +385 91 859 5339 </td>
+                        <td> josucljak@foi.hr </td>
+                        <td> Sesvete </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 4. </td>
+                        <td> Tomislav  </td>
+                        <td> Budimlić </td>
+                        <td> Tomo </td>
+                        <td> wqdfbvc</td>
+                        <td> 05.kolovoza.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 92 859 5339 </td>
+                        <td> tombudmli@foi.hr </td>
+                        <td> Požega </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Isključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 5. </td>
+                        <td> Josip </td>
+                        <td> Fran </td>
+                        <td> Fran </td>
+                        <td> qwehznbetht</td>
+                        <td> 08.ožujka.1995.</td>
+                        <td> Muški </td>
+                        <td> +385 98 859 5339 </td>
+                        <td> josfran@foi.hr </td>
+                        <td> Malino </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 6. </td>
+                        <td> Patrik </td>
+                        <td> Borković </td>
+                        <td> Pajo </td>
+                        <td> ćčlokijhg</td>
+                        <td> 09.veljače.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> patborko@foi.hr </td>
+                        <td> Belica </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 7. </td>
+                        <td> Vinko </td>
+                        <td> Cvitković </td>
+                        <td> Cvitko </td>
+                        <td> špoiuzre</td>
+                        <td> 25.svibnja.1996.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> vincvit@foi.hr </td>
+                        <td> Zagreb </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 8. </td>
+                        <td> Rino </td>
+                        <td> Šunjerga </td>
+                        <td> BaleRino </td>
+                        <td> cvbnmj</td>
+                        <td> 09.veljače.1996.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> rinsunjer@foi.hr </td>
+                        <td> Zagreb </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 9. </td>
+                        <td> Ivanka </td>
+                        <td> Barišić </td>
+                        <td> ivv </td>
+                        <td> edcrfvgzhn</td>
+                        <td> 13.kolovoza.1994.</td>
+                        <td> Ženski </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> ivabar@gmail.hr </td>
+                        <td> Križevci </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 10. </td>
+                        <td> Dean </td>
+                        <td> Jakovljević </td>
+                        <td> Dejo </td>
+                        <td> qwsdrfvbhj</td>
+                        <td> 03.travnja.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> deanjakov@foi.hr </td>
+                        <td> Bjelovar  </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 11. </td>
+                        <td> Petra </td>
+                        <td> Ivančić </td>
+                        <td> Iva </td>
+                        <td> erthnbvfgv</td>
+                        <td> 16.svibnja.1986.</td>
+                        <td> Ženski </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> damdrempe@foi.hr </td>
+                        <td> Pregrada </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 12. </td>
+                        <td> Roberto </td>
+                        <td> Burić </td>
+                        <td> Debeli </td>
+                        <td> mnbftzh</td>
+                        <td> 02.svibnja.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> robburic@foi.hr </td>
+                        <td> Pregrada </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 13. </td>
+                        <td> Davor </td>
+                        <td> Palić </td>
+                        <td> Pale </td>
+                        <td> poiuztgbnb</td>
+                        <td> 05.travnja.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> Nema </td>
+                        <td> Zagreb </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 14. </td>
+                        <td> Lukas </td>
+                        <td> Šipić </td>
+                        <td> Jazo </td>
+                        <td> edcrfvtgbzh</td>
+                        <td> 17.srpnja.1994.</td>
+                        <td> Muški </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> luksipi@foi.hr </td>
+                        <td> Novoselec </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                    <tr>
+                        <td> 15. </td>
+                        <td> Sandra </td>
+                        <td> Cvitković </td>
+                        <td> Sada </td>
+                        <td> afhnbgvcerg</td>
+                        <td> 05.veljače.1985.</td>
+                        <td> Ženski </td>
+                        <td> +385 95 859 5339 </td>
+                        <td> filpong@foi.hr </td>
+                        <td> Varaždin </td>
+                        <td> <img width="55" height="55" alt="slika" src="img/slika.jpg"> </td>
+                        <td> Uključeno </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <div id="validacija" >
+                <figure> 
+                    <a target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmatcvitko%2Fkorisnici_jquery.html"> <img src="img/HTML5.png" height="100" width="100" alt="HTML Validacija"></a> 
+                    <a target="_blank" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmatcvitko%2Fkorisnici_jquery.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en"> <img src="img/CSS3.png" height="110" width="110" alt="CSS Validacija"></a> 
+                </figure>
+            </div>
+            <p> Vrijeme potrebno za rješavanje ovog zadatka: 2h </p>
+            <p> Vrijeme potrebno za rješenje ukupnog zadatka: 20h </p>
+            <address>Kontakt: <a href="mailto:matcvitko@foi.hr">Matej Cvitković</a></address>
+            <br>&copy; 2016 M.Cvitković
+        </footer>
+        <link rel="stylesheet" property='stylesheet' type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" property='stylesheet' type="text/css" href="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.js"></script>
+        <script type="text/javascript" src="js/matcvitko_jquery.js"></script>
+    </body>
+</html>

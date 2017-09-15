@@ -1,0 +1,204 @@
+
+body{
+    font-family: Helvetical, Arial, san-serif;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    background-color: #CCE5FF;
+}
+header{
+    font-family: Bookman Old Style;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #ffffff;
+    
+    background-color: #0066ff; 
+    background-image: url('foi_logo_white.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    width: 100%;
+}
+hr.jedan, hr.dva, hr.tri{
+    background-color:  #0066ff;
+    border: none;
+    height: 3px;
+    margin: 2px;
+}
+hr.dva{
+    height: 2px;    
+    margin: 2px;
+}
+hr.tri{
+    height: 1px;
+    margin: 3px;
+}
+
+nav#meni{
+    display: inline-block;
+    padding: 5px 5px;   
+    width: 100%;
+    float: left;
+    margin-right: 8%;
+}
+
+#meni > ul {
+    list-style: none;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#meni > ul li a {
+    background: none repeat scroll 0 0 white;
+    border-color: #000000;
+    border-left: 1px dotted #000000;
+    border-width: 1px;
+    color: #0066ff;
+    display: inline;
+    float: left;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 2px;
+
+}
+
+#meni > ul li a:hover {
+    color: #ffffff;
+    background-color: #0099ff;
+}
+#meni > ul li a:active {
+    color: #ffffff;
+    background-color: #0066ff;
+}
+
+#meni > ul li:first-child a{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:  5px;
+    border-left-style: none;
+}
+
+#meni > ul li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:  5px;
+}
+
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0066ff;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    font-size: 11px;
+    padding: 8px 0px;
+    
+    clear: both;    
+}
+
+footer > adress > a:visited,
+footer > adress > a{
+    color: #ffffff;
+}
+
+section#sadrzaj{
+    padding: 5px 5px;
+    margin-left: 8%;
+    margin-right: 8%;
+    float: left; 
+}
+
+.naslov {
+    color: #0066ff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.podnaslov{
+    color: #0066ff;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 451px) {
+    header {
+        background-image: none;
+    }
+    #meni > ul li a {
+        padding: 12px 3%;
+    }
+    
+}
+
+@media only screen and (max-width : 600px) and (min-width : 100px) {
+    video{
+        width: 98%;
+    }
+}
+@media only screen and (max-width : 550px) and (min-width : 100px) {
+    header {
+        background-image: none;
+    }
+    nav#meni{  
+            width:80%;
+            margin-left: 10%;
+        }
+    section#sadrzaj{
+        width:90%;        
+        
+    }
+    #meni > ul {
+        text-align: center;
+    }
+    #meni > ul li a {
+        border-top: 1px dotted #000000;
+        padding: 12px 20px;
+        border-left: none;
+        display: block;
+        float: none;
+    }
+        
+    #meni > ul li:first-child a{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top-style: none;
+    }
+
+    #meni > ul li:last-child a {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0;
+    }
+}
+
+@media only screen and (max-width : 450px) and (min-width : 100px) {
+    header {
+        font-size: large;
+    }
+    
+    nav#meni{
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 90%
+    }
+    
+    #meni > ul {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+}

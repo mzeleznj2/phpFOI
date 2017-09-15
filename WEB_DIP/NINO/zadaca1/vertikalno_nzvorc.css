@@ -1,0 +1,387 @@
+
+body{
+    font-family: Helvetical, Arial, san-serif;
+    font-size: 14px;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+header{
+    font-family: Bookman Old Style;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #ffffff;
+    
+    background-color: #e4433c; 
+    background-image: url('foi_logo_white.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    width: 100%;
+}
+
+hr.jedan, hr.dva, hr.tri{
+    background-color:  #e4433c;
+    border: none;
+    height: 3px;
+    margin: 2px;
+}
+hr.dva{
+    height: 2px;    
+    margin: 2px;
+}
+hr.tri{
+    height: 1px;
+    margin: 3px;
+}
+nav#meni{
+    display: inline-block;
+    padding: 15px 5px;   
+    width: 15%;
+    float: left;
+    margin-right: 5%;
+}
+
+#meni > ul {
+    list-style: none;
+    line-height: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#meni > ul li a {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-color: #000000;
+    border-top: 1px dotted #000000;
+    border-width: 1px;
+    color: #E4433C;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+#meni > ul li a:hover {
+    color: #ffffff;
+    background-color: #f23f37;
+}
+#meni > ul li a:active {
+    color: #ffffff;
+    background-color: #f00f00;
+}
+
+#meni > ul li:first-child a{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: none;
+}
+
+#meni > ul li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #E4433C;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    font-size: 11px;
+    padding: 8px 0px;
+    
+    clear: both;    
+}
+
+footer > adress > a:visited,
+footer > adress > a{
+    color: #ffffff;
+}
+
+section#sadrzaj{
+    padding: 5px 5px;
+    margin-left: 10px;
+    width: 60%;
+    float: left; 
+}
+
+form {
+    background-color:#DDDDDD;
+    width: 90%;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+label {
+    color: #444444;
+    text-align: left;
+    font-size: 13px;
+    width: 100px;
+    margin: 8px;
+    margin-left: 15%;
+    float: left;
+    clear: both;
+    height: 20px;
+    padding: 1px;
+}
+
+.label1{
+   float: none;
+   margin-left: 1px;
+   margin-right: 20px;
+   margin-top: 10px;
+}
+
+.label2{
+   width: 250px;
+   margin-top: 20px;
+   margin-right: 5px;
+}
+
+.zapamti{
+    margin-top: 12px;
+    width: 130px;
+    margin-left: 15%;
+}
+.check{
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 10px;
+}
+
+.label3{
+    width: 50%;
+}
+
+.check1{
+    margin-left: 130px;
+    margin-top: 20px;;
+}
+
+.gumb, .gumb2, .gumb3, .gumb4{
+    background-color: #e4433c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 15px; 
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.gumb3, .gumb4{
+    padding: 5px 10px;
+    width: auto;
+}
+.gumb4{
+    margin-left: 25%
+}
+
+.gumb2{
+   margin-left: 120px;
+   margin-bottom: 20px;
+}
+
+.gumb:hover, .gumb2:hover, .gumb3:hover, .gumb4:hover{
+    background-color: #e1100c;
+    color: white;
+}
+
+.gumb:active, .gumb2:active, .gumb3:active, .gumb4:active{
+    background-color: #f0000f;
+    color: white;
+}
+
+.browse{
+   height: 30px;
+}
+
+input, textarea{
+    margin: 6px;
+    border-radius: 5px;
+}
+
+select{
+    margin: 6px;
+    border-radius: 5px;
+    height: 25px;
+    padding: 2px;
+}
+
+.input1{
+    width: 300px;
+    height: 20px;       
+}
+.input2{
+    width: 220px;
+    height: 20px; 
+}
+.input3{
+    width: 150px;
+    height: 20px;
+}
+
+.input4{
+    margin: 8px;
+}
+
+.naslov {
+    color: #e4433c;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.podnaslov{
+    color: #e4433c;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table{ 
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+}
+
+tr th {
+   background-color: #E4433C;
+   border-style: none;
+   color: #EAEAEA;
+   font-size: 12px;
+   padding: 8px; 
+}
+
+tr {
+   background-color:#BBBBBB;
+   border-style: none;
+   color: #333333;
+   height: 30px;
+   font-size: 12px;
+}
+tr.redak{
+   background-color:#EAEAEA;
+   border-style: none;
+   color: #555555;
+}
+
+tr:hover{
+    background-color: #111111;
+    color: white; 
+}
+
+tr td {
+    padding: 5px;
+}
+.stupac{
+    text-align: center;
+}
+
+@media only screen and (max-width : 1250px) and (min-width : 451px) {
+    nav#meni{  
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 451px) {
+    video{
+        width: 90%;
+    }
+     nav#meni{  
+        margin-right: 2%
+    }
+    header {
+        background-image: none;
+    }
+    label{
+        margin-left: 5%;
+    }
+    .input1{
+        width: 55%;
+        height: 20px;       
+    }
+    .input2{
+        width: 50%;
+        height: 20px; 
+    }
+    .input3{
+        width: 40%;
+        height: 20px;
+    }
+    .label3{
+        margin-top: 5%;
+        width: 80%;
+    }
+    .zapamti{
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width : 710px) and (min-width : 100px) {
+    nav#meni{  
+            width:80%;
+            margin-left: 10%;   
+        }
+    section#sadrzaj{
+        width:90%;        
+        
+    }
+    #meni > ul {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 450px) and (min-width : 100px) {
+    header {
+        background-image: none;
+        font-size: large;
+    }
+
+    section#sadrzaj{
+        width:90%;
+    }
+    
+    nav#meni{
+        width:90%;
+        margin-left: 4%;
+    }
+    
+    #meni > ul {
+        width: 100%;
+    }
+    label {  
+        margin-left: 5%;
+    }
+    .input1{
+        width: 60%;
+        height: 20px;       
+    }
+    .input2{
+        width: 50%;
+        height: 20px; 
+    }
+    .input3{
+        width: 40%;
+        height: 20px;
+    }
+    .label3{
+        margin-top: 5%;
+        width: 80%;
+    }
+
+}

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Prijavite se"
+AuthUserFile  "/var/www/webdip.barka.foi.hr/2016_projekti/WebDiP2016x130/privatno/.htpasswd"
+require valid-user

@@ -1,0 +1,50 @@
+ Volume in drive D is DATA
+ Volume Serial Number is 7836-2B42
+
+ Directory of D:\xampper\www\zeleznjaknovi
+
+25.08.2016.  15:10             3.084 admin.php
+24.05.2016.  08:04               876 aktivacija.php
+17.06.2016.  09:07             2.226 baza_class.php
+25.08.2016.  15:10            10.158 clan.php
+26.08.2016.  15:24             8.358 clanovi.php
+29.08.2016.  13:24            12.696 dbconnect.php
+25.08.2016.  10:04               720 dispImage.php
+26.08.2016.  14:31             6.093 dnevnik.php
+26.08.2016.  15:41             5.249 index.php
+25.08.2016.  15:10             5.337 kategorija.php
+26.08.2016.  15:24             8.899 kategorije.php
+26.08.2016.  10:19             8.849 kategorijecopy.php
+25.08.2016.  15:10            10.086 knjiga.php
+29.08.2016.  11:52            10.796 knjige.php
+26.08.2016.  15:25             4.724 knjigetop10.php
+29.08.2016.  13:34             6.523 knjiznica.php
+29.08.2016.  14:07             8.668 knjiznice.php
+29.08.2016.  14:14             6.263 login.php
+22.08.2016.  15:45             2.437 logiraj.php
+25.08.2016.  15:23             1.748 logiraj2.php
+18.06.2016.  22:47             1.530 lokacija.php
+14.06.2016.  10:14            12.415 lokacije.php
+23.08.2016.  14:53             3.314 neka.php
+26.08.2016.  15:42               730 OdaberiKnjiznicu.php
+06.06.2016.  12:49               153 odjava.php
+17.06.2016.  09:03               540 podnozje.php
+02.06.2016.  13:32            12.416 posudbe.php
+19.06.2016.  17:28            13.947 posudrez - Copy.php
+26.08.2016.  15:25            18.353 posudrez.php
+01.07.2016.  15:23             4.066 primjer1.php
+25.08.2016.  11:56             3.289 primjer3.php
+25.08.2016.  10:17            14.720 rezervacije.php
+15.06.2016.  14:15               476 session.php
+25.08.2016.  15:09             5.415 statistikalike.php
+25.08.2016.  15:09             5.384 statistikalikekateg.php
+29.08.2016.  14:05             7.007 statknjige.php
+26.08.2016.  12:13             3.870 VratiClanove.php
+26.08.2016.  11:40             3.967 VratiKategorije.php
+26.08.2016.  11:56             4.953 VratiKnjige.php
+29.08.2016.  13:58             3.840 VratiKnjiznice.php
+26.08.2016.  14:26             2.518 VratiPodatkeDnevnika.php
+26.08.2016.  14:00             2.601 VratiStatistike.php
+26.08.2016.  11:42             3.439 zaglavlje.php
+              43 File(s)        252.733 bytes
+               0 Dir(s)  437.554.692.096 bytes free

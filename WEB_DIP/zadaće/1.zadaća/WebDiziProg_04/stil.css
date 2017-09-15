@@ -1,0 +1,23 @@
+table.tablica1
+{
+    border: 1px;
+}
+tr.tablica1_redak1
+{
+    color: black;
+}
+tr.tablica1_redak2
+{
+    color: red;
+}
+tr.tablica1_zaglavlje
+{
+    background-color: deepskyblue;
+    color: yellow;
+    font-size: larger;
+    text-align: center
+}
+tr.tablica1_podnozje
+{
+    background-color: darkgray;
+}

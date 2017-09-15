@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Novi proizvod - Zadaća 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Ovo je Zadaća 1 iz kolegija WebDiP!" />
+		<meta name="author" content="Igor Rinkovec" />
+		<meta name="keywords" content="HTML,CSS,FOI,WebDiP,Fakultet organizacije i informatike" />
+		<meta name="created" content="2017-03-04">
+
+		<link rel="stylesheet" type="text/css" href="css/igorinkov.css" />
+		<script src="js/igorinkov.js"></script>
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img src="slike/logo.png" alt="logotip fakulteta organizacije i informatike" usemap="#logo"/>
+				<figcaption>FOI Logo</figcaption>
+			</figure>
+			<map name="logo">
+			    <area shape="rect" coords="0,0,100,100" href="http://foi.hr/" target="_blank" title="FOI Web" alt="foi web" />
+			    <area shape="rect" coords="100,0,368,100" href="#page-content" title="Google" alt="Google" />
+			</map>
+			<h1>Novi proizvod</h1>
+		</header>
+		<nav>
+			<a href="index.html">Početna</a>
+			<a href="registracija.html">Registracija</a>
+			<a href="prijava.html">Prijava</a>
+			<a href="popis_proizvoda.html">Popis proizvoda</a>
+			<a href="proizvod.html">Proizvod</a>
+			<a href="novi_proizvod.html">Novi proizvod</a>
+		</nav>
+		<main id="page-content">
+			<form action="http://barka.foi.hr/WebDiP/2016/materijali/zadace/ispis_forme.php" method="POST">
+				<div class="form-group">
+					<label for="naziv-proizvoda">Naziv proizvoda</label>
+					<input type="text" id="naziv-proizvoda" name="product-name"/>
+				</div>
+				<div class="form-group">
+					<label for="product-description">Opis proizvoda</label>
+					<textarea id="product-description" name="product-description" cols="100" rows="50" placeholder="Ovdje unesite opis proizvoda"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="production-date">Datum proizvodnje</label>
+					<input type="text" name="production-date" id="production-date" />
+				</div>
+				<div class="form-group">
+					<label for="production-time">Vrijeme proizvodnje</label>
+					<input type="text" name="production-time" id="production-time" />
+				</div>
+				<div class="form-group">
+					<label for="amount">Količina</label>
+					<input type="text" name="amount" id="amount"/>
+				</div>
+				<div class="form-group">
+					<label for="weight">Težina</label>
+					<input type="text" name="weight" id="weight"/>
+				</div>
+				<div class="form-group" id="product-category">
+					<label>Kategorije proizvoda</label>
+                                        <label class="choice" for="chckbx-hrana"><input type="checkbox" id="chckbx-hrana" name="food" checked> Hrana</label>
+  					<label class="choice" for="chckbx-pice"><input type="checkbox" id="chckbx-pice" name="drink"> Piće</label>
+                                        <label class="choice" for="chckbx-pastry"><input type="checkbox" id="chckbx-pastry" name="pastry"> Pekarski proizvod</label>
+                                        <label class="choice" for="chckbx-alcohol"><input type="checkbox" id="chckbx-alcohol" name="alcohol"> Alkoholno piće</label>
+                                </div>
+				<input type="reset" value="Obriši" /> <input type="submit" value="Pošalji" /> 
+				<button id="refresh" class="hidden">Osvježi stranicu</button>
+			</form>
+		</main>
+		<footer>
+			<p>
+				Vrijeme potrebno: 1h50min
+			</p>
+			<figure>
+				<a href="https://validator.w3.org/check?uri=referer"><img src="slike/html5.png" alt="HTML5 logo"/></a>
+				<figcaption>HTML5 Logo</figcaption>
+			</figure>
+			<figure>
+				<img src="slike/css3.png" alt="CSS3 logo"/>
+				<figcaption>CSS3 logo</figcaption>
+			</figure>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+		</footer>
+
+	</body>
+</html>

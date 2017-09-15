@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Početna stranica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Početna stranica">
+        <meta name="autor" content="Krešimir Zelenika">
+        <meta name="kljucne rijeci" content="Početna stranica, autor">
+        <meta name="datum" content="3.9.2017">
+        <link rel="stylesheet" type="text/css" href="css/kzelenik.css">
+    </head>
+    <body id="b">
+        <header>
+            <h3 class="marquee"><span style="color: white; padding-top: 5px;">Dobrodošli na početnu stranicu!</span></h3>
+            <img src="slike/logo.png" alt="logo" usemap="#logomap" style=" width:auto; height:auto; box-shadow: 0px 0px 0px;">
+            <map name="logomap">
+                <area shape="rect" coords="0,0,110,100" href="index.html" alt= "Početna stranica" target ="_blank">
+                <area shape="rect" coords="110,0,370,100" href="index.html#autor" alt = "O autoru">
+            </map>
+        </header><br>
+        <nav id="navi">
+            <div>
+                <button onclick="location.href ='index.html'">Početna</button><br>
+                <button onclick="location.href ='proizvod.html'">Opis proizvoda</button><br>
+                <button onclick="location.href ='registracija.html'">Registracija</button><br>
+                <button onclick="location.href ='prijava.html'">Prijava</button><br>
+                <button onclick="location.href ='novi_proizvod.html'">Dodavanje proizvoda</button><br>
+                <button onclick="location.href ='popis_proizvoda.html'">Popis proizvoda</button><br>
+				<button onclick="location.href ='era.html'">Era dijagram</button><br>
+				<button onclick="location.href ='navigacijski.html'">Navigacijski dijagram</button>
+            </div>
+        </nav>
+        <br>
+        <section id="sadrzajI">
+            <h3><b>O autoru:</b></h3>
+            <article id="autor">
+                <figure>
+                    <ul id="list">
+                        <li>Krešimir</li>
+                        <li>Zelenika&emsp;</li>
+                        <li>kzelenik@foi.hr</li>
+                        <li>41249/12-R</li>
+                    </ul>
+                    <img src="slike/ja.jpg" id="ja" alt="Slika autora">
+                </figure>
+            </article>
+            <div id="slike">
+                <h3 id="naslov"><b>Slike omiljenih proizvoda: </b></h3>
+                <article>
+                    <div>
+                    <figure style="float:left;">
+                        <a href="slike/suavecito.jpg" target="_blank">Pomada za kosu<br><img src="slike/suavecito.jpg " alt="Pomada za kosu"> </a>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p style="padding-top:55px; padding-right: 60px;">
+                        Suavecito pomada jedinstvenog mirisa ima kremastu konzistencije. Topiva je u vodi i ne zahtjeva 
+                        šamponiranje kako bi se uklonila s kose. Češlja se s lakoćom i pruža snažan stisak  za maksimalnu 
+                        fleksibilnost frizure. Suavecito Firme pomada je čvrsta i ima umjereni sjaj.
+                    </p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                    <figure style="float:left;">
+                        <a href="slike/beardoil.jpg" target="_blank">Devil's Forest Beard Oil<br><img src="slike/beardoil.jpg " alt="Devil's Forest Beard Oil"> </a>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p style="padding-top:55px; padding-right: 60px;">
+                        Devil's Forest ulje za bradu. Obnovit će i regenerirati kožu i bradu, štiteći 
+                        ih od svih štetnih vanjskih utjecaja. 
+                        Brzo se upija i uistinu djeluje sedativno. Mir i stabilnost Vaš su izbor!
+                    </p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                    <figure style="float:left;">
+                        <a href="slike/rebalansing.jpg" target="_blank">Rebalancing Shampoo<br><img src="slike/rebalansing.jpg " alt="Rebalancing Shampoo"> </a>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p style="padding-top:55px; padding-right: 60px;">
+                        Šampon za masno vlasište. Normalizira i uravnotežuje vlasište koje proizvodi previše sebuma. 
+                        Učinkovito djeluju na smirivanje žlijezde lojnice
+                    </p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                    <figure style="float:left;">
+                        <a href="slike/oakbeardwash.jpg" target="_blank"> Oak Beard Wash<br><img src="slike/oakbeardwash.jpg" alt="Oak Beard Wash"> </a>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p style="padding-top:55px; padding-right: 60px;">
+                        Beard Wash prikladan je za sve tipove brada, ali prvenstveno one čiji vlasnici cijene njegu 
+                        vrhunske kvalitete. Uostalom, brada ne dolazi u kontakt samo s hranom, tekućinom I dimom, 
+                        podvrgnuta je također odlikovanju proizvodima za njegu kao što su vosak I ulje koji tvrdoglavo 
+                        ostaju na gustoj bradi.
+                    </p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                    <figure style="float:left;">
+                        <a href="slike/mrbear.jpg" target="_blank">Mr Bear Beard Balm Woodland<br><img src="slike/mrbear.jpg" alt="MR Bear Beard Balm Woodland"> </a>
+                        <figcaption></figcaption>
+                    </figure>
+                    <p style="padding-top:55px; padding-right: 60px;">
+                        Mr Bear Beard Balm je balzam koji njeguje i definira oblik brade, bez maščenja. 
+                        Ručno je napravljen u Švedskoj, bez kemikalija, alkohola I silikona. Blage je čvrstoće 
+                        i sadrži karate maslac, pčelini vosak, lanolin i eterična ulja. Miris borove šume.
+                    </p>
+                    </div>
+                </article><br><br>
+            </div>
+        </section><br>
+
+        <footer id="foot">
+                <p> Vrijeme potrebno za rješavanje aktivnog dokumenta: 5 sati.</p>
+                <address>
+                    <b>Kontakt:</b><a href="mailto:kzelenik@foi.hr">Krešimir Zelenika</a>
+                </address>
+                <p><small>&copy;</small>2017. K. Zelenika</p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Findex.html">
+					<img src="slike/HTML5.png" alt="HTML validator" style=" width: 100px;">
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fkzelenik.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img src="slike/CSS3.png" alt="CSS validator" style=" width: 100px;">
+				</a>
+		</footer>
+    </body>
+</html>

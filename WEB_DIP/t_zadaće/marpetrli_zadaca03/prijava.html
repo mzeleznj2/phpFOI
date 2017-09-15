@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="pri">
+    <head>
+    	<title>Stranica s prijavom</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marko Petrlić">
+        <meta name="keywords" content="FOI, WebDiP, Zadaća 3">
+        <link rel="stylesheet" type="text/css" href="css/marpetrli.css">
+    </head>
+    <body> 
+		<header>
+			<img src="img/logo.png" alt="Logo">
+			<h1>
+				Zadaća 3
+			</h1>
+		</header>
+		
+		<nav>
+		    <ol>
+		    	<li><a href="index.html">Početna</a></li>
+		    	<li><a href="registracija.html">Registacija</a></li>
+		    	<li><a href="prijava.html">Prijava</a></li>
+		    	<li><a href="registracija_jquery.html">Registracija jquery</a></li>
+		    	<li><a href="korisnici_jquery.html">Korinsici jquery</a></li>
+		    	<li><a href="gen_korisnici_jquery.html">Generirani korisnici jquery</a></li>
+		    </ol>
+		</nav>
+		
+		<section id="priSec">
+			<h2>
+				Prijava
+			</h2>
+			<form method="POST" action="https://barka.foi.hr/WebDiP/2015/materijali/zadace/ispis_forme.php" id="priForm">
+				<label for="korisnicko_ime">Korisničko ime: </label>
+				<input type="text" autofocus="autofocus" id="korisnicko_ime" name="korisnicko_ime" placeholder="Korisničko ime">
+				<br>
+
+				<label for="lozinka">Lozinka: </label>
+				<input type="password" id="lozinka" name="lozinka" placeholder="Lozinka">
+				<br>
+
+				<label for="checkbox">Zapemti me: </label>
+				<input type="checkbox" id="checkbox" name="checkbox" checked="checked">
+				<br>
+
+				<input type="submit" id="poslaji" name="posalji" value="Pošalji">
+				<br>
+
+				<a href="registracija.html">Zaboravljena lozinka</a>
+				<br>
+				<a href="registracija.html">Registracija</a>
+				<label id="prijGre"></label>
+			</form>
+		</section>
+		
+		<footer style="background-color: yellow;">
+		    Vrijeme potrebno za rješavanje zadatak: 30 minuta
+		    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmarpetrli%2Fprijava.html">
+				<img src="img/HTML5.png" height="50" width="50" alt="HTML5">
+			</a>
+		    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmarpetrli%2Fprijava.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+				<img src="img/CSS3.png" height="50" width="50" alt="CSS3">
+			</a>
+		</footer>
+		<script type="text/javascript" src="js/marpetrli.js"></script> 
+    </body>
+</html>

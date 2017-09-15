@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2014, 6:41:17 PM
+    Author     : Matija Novak <matija.novak@foi.hr>
+*/
+
+ body {
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+
+form {
+ width: 100%;
+ overflow:hidden;
+ background-color:#EAEAEA;
+ border-radius: 5px;
+ border-color: black;
+ border-width: 1px;
+ padding: 5px;
+}
+
+label {
+    color: #555555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.naslov {
+    color: #e4433c;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: 0;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+}
+
+th {
+   background-color: #E4433C;
+   border-style: none;
+   color: #EAEAEA;
+   font-size: 12px;
+   padding: 8px; 
+}
+
+td {
+   background-color:#EAEAEA;
+   border-style: none;
+   color: #555555;
+   padding: 4px;
+   font-size: 12px;
+}
+
+tr:hover td{
+    background-color: lightgrey;
+    color: #E4433C;
+}

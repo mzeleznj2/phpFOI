@@ -1,0 +1,13 @@
+body 
+{ 
+	background: write;	
+	color: black; 
+}
+p {
+	color: red;
+}
+.slika
+{ 
+	display: none;
+	visibility: hidden;
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opis proizvoda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Opis proizvoda">
+		<meta name="autor" content="Krešimir Zelenika">
+		<meta name="kljucne rijeci" content="Opis proizvoda, proizvod">
+		<meta name="datum" content="3.9.2017">
+		<link rel="stylesheet" type="text/css" href="css/kzelenik.css">
+		<script type="text/javascript" src="js/kzelenik.js"></script>
+    </head>
+    <body id="b">
+        <header>
+            <h3 class="marquee"><span style="color: white; padding-top: 5px;">Dobrodošli na stranicu proizvoda!</span></h3>
+            <img src="slike/logo.png" alt="logo" usemap="#logomap" style=" width:auto; height:auto; box-shadow: 0px 0px 0px;">
+			<map name="logomap">
+				<area shape="rect" coords="0,0,110,100" href="index.html" alt= "Početna stranica" target ="_blank">
+				<area shape="rect" coords="110,0,370,100" href="index.html#autor" alt = "O autoru">
+			</map>
+        </header><br>
+        <nav id="navi">
+			<div>
+                <button onclick="location.href ='index.html'">Početna</button><br>
+                <button onclick="location.href ='proizvod.html'">Opis proizvoda</button><br>
+                <button onclick="location.href ='registracija.html'">Registracija</button><br>
+                <button onclick="location.href ='prijava.html'">Prijava</button><br>
+                <button onclick="location.href ='novi_proizvod.html'">Dodavanje proizvoda</button><br>
+                <button onclick="location.href ='popis_proizvoda.html'">Popis proizvoda</button><br>
+				<button onclick="location.href ='era.html'">Era dijagram</button><br>
+				<button onclick="location.href ='navigacijski.html'">Navigacijski dijagram</button>
+			</div>
+        </nav>
+        <br>
+        <section id ="sadrzaj">
+            <h3><u>Sadržaj:</u></h3>
+            <ol>
+                <li><a href ="#pomada">Suavecito pomada za kosu</a></li>
+            </ol>
+            <div id="pomada" style="padding-left: 20px;">
+                <h4>Naziv proizvoda: Suavecito pomada za kosu</h4>
+				<h4>Opis: </h4>			
+                <p style="width: auto; overflow: hidden; overflow-wrap: break-word;">
+                    Suavecito pomada jedinstvenog mirisa ima kremastu konzistencije. Topiva je u vodi i ne zahtjeva 
+                    šamponiranje kako bi se uklonila s kose. Češlja se s lakoćom i pruža snažan stisak  za maksimalnu 
+                    fleksibilnost frizure. Suavecito Firme pomada je čvrsta i ima umjereni sjaj.
+                </p>
+				<h4>Datum proizvodnje:</h4>
+				<p>
+					8.3.2017
+				</p>
+				<h4>Vrijeme proizvodnje:</h4>
+				<p>
+					07:05
+				</p>
+				<h4>Količina proizvoda:</h4>
+				<p>
+					250
+				</p>
+				<h4>Težina proizvoda:</h4>
+				<p>
+					5
+				</p>
+				<h4>Kategorija proizvoda:</h4>
+				<p>
+					Kosa
+				</p>
+            </div>
+			<br><br><br>
+			<div id="slikeProizvoda">
+				<div id="slikaJedan">
+					<img src="slike/suavecito.jpg" alt="slika_1" id="slika1" onmouseover="mO1();">
+				</div>
+				<div id="slikaDva">
+					<img src="slike/suavecito2.jpg" alt="slika_2" onmouseover="mO2();" id="slika2">
+				</div>
+				<div id="slikaTri">
+					<img src="slike/suavecito3.jpg" alt="slika_3" onmouseover="mO3();" id="slika3">
+				</div>
+			</div><br>
+			<p id = "manemoj"></p>
+			<br><br><br>
+        </section>
+        
+        <footer id="foot">
+                <p> Vrijeme potrebno za rješavanje aktivnog dokumenta: 2 sata.</p>
+                <address>
+                    <b>Kontakt:</b><a href="mailto:kzelenik@foi.hr">Krešimir Zelenika</a>
+                </address>
+                <p><small>&copy;</small>2017. K. Zelenika</p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fproizvod.html">
+					<img src="slike/HTML5.png" alt="HTML validator" style=" width: 100px;">
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fkzelenik.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img src="slike/CSS3.png" alt="CSS validator" style=" width: 100px;">
+				</a>
+		</footer>
+    </body>
+</html>

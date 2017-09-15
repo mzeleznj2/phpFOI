@@ -1,0 +1,186 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 15, 2017, 4:36:40 PM
+    Author     : Maja
+*/
+
+header
+{
+    font-family: "Times New Roman";
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #FFFFFF;
+    height: 100px;
+    background-color: #990033;       
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    width: 100%;
+}
+
+#naslovna
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#footer{
+    background-color: #990033;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    font-size: 11px;  
+    margin:200px 0px 0px 0px;  
+    padding-bottom: 10px;
+    clear:both;
+}
+
+#css3{
+    position: absolute;
+    left: 500px;  
+}
+
+#html5
+{    
+    left: 550px;
+    padding-top: 10px;
+}
+
+body
+{
+    margin: 0;
+}
+
+#meni > ul {  
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 0;
+    width: 13%;
+    background-color: #990033;
+    position: absolute;
+    height: 60%;   
+}
+
+#meni> ul li a{
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+#sadrzaj{
+    margin-left:15%;
+    padding:1px 16px;
+    margin-top: 10px;        
+}
+
+.sjena {
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+figure > img:hover{
+    z-index: 2;
+}
+
+.registracija
+{
+    position: relative;
+    left: 0%;   
+}
+
+#registracija label{
+    padding: 5px 5px 5px 0px;  
+    margin-right: 10px;
+}
+
+#forma{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+#registracija input{
+    padding: 5px 5px 5px 0px;   
+    margin: 5px 5px 5px 15px;  
+    border: 1px solid #990033;
+}
+
+#korime {
+     padding: 5px 5px 5px 0px;  
+     margin-right: 10px;
+}
+
+#lozinka{
+    padding: 5px 5px 5px 0px;  
+     margin-right: 10px;
+}
+
+input #korime{
+    padding: 5px 5px 5px 0px;   
+    margin: 5px 5px 5px 15px; 
+    border: 1px solid #990033;
+    
+}
+
+#lozinkainput{
+    padding: 5px 5px 5px 0px;   
+    margin: 5px 5px 5px 62px;
+    border: 1px solid #990033;    
+}
+
+#zapamti{
+     margin-right: 50px;   
+}
+
+#submit{  
+   margin: 20px 10px 10px 136px;
+    background-color:  #8CC1F6;   
+     padding: 8px 20px;
+     cursor: pointer;
+}
+
+#prijava {
+    margin: 15px 20px 15px 20%; 
+    padding-left: 10px;
+    width: 40%;
+    background-color: #F3F79A;
+}
+
+
+@media screen and (max-width: 480px){
+   
+    #triSLike{
+        visibility:hidden;
+    }
+    #osobnaSlika{
+         display: none;
+    }
+    
+    #naslovna{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width:1024px){
+    body{
+        background-color: green;
+    }
+    #triSLike{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+
+}

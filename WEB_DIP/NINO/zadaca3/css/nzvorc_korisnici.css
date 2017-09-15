@@ -1,0 +1,362 @@
+
+body{
+    font-family: Helvetical, Arial, san-serif;
+    font-size: 14px;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+header{
+    font-family: Bookman Old Style;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #ffffff;
+    
+    background-color: #e4433c; 
+    background-image: url('../img/foi_logo_white.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    width: 100%;
+}
+
+.misgore{
+    font-weight: bold;
+    color: brown;
+}
+
+.slika{
+    width: 100%;
+}
+
+hr.jedan, hr.dva, hr.tri{
+    background-color:  #e4433c;
+    border: none;
+    height: 3px;
+    margin: 2px;
+}
+hr.dva{
+    height: 2px;    
+    margin: 2px;
+}
+hr.tri{
+    height: 1px;
+    margin: 3px;
+}
+
+nav#meni, nav#meni1{
+    display: inline-block;
+    padding: 5px 5px;   
+    width: 700px;
+    float: left;
+    margin-right: 8%;
+}
+
+#meni > ul, #meni1 > ul {
+    list-style: none;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#meni > ul li a, #meni1 > ul li a {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-color: #000000;
+    border-left: 1px dotted #000000;
+    border-width: 1px;
+    color: #E4433C;
+    display: inline;
+    float: left;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 2px;
+}
+#meni > ul li a {
+    padding: 18px 50px;
+}
+
+#meni1 > ul li a {
+    padding: 10px 43px;
+    text-align: center;
+}
+
+#meni > ul li a:hover, #meni1 > ul li a:hover  {
+    color: #ffffff;
+    background-color: #f23f37;
+}
+#meni > ul li a:active, #meni1 > ul li a:active {
+    color: #ffffff;
+    background-color: #f00f00;
+}
+
+#meni > ul li:first-child a, #meni1 > ul li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:  5px;
+    border-left-style: none;
+}
+
+#meni > ul li:last-child a, #meni1 > ul li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:  5px;
+}
+
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #E4433C;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    font-size: 11px;
+    padding: 8px 0px;
+    clear: both;    
+}
+
+footer > adress > a:visited,
+footer > adress > a{
+    color: #ffffff;
+}
+
+section#sadrzaj{
+    padding: 5px 5px;
+    margin-left: 5%;
+    width: 90%;
+    float: left; 
+}
+
+form {
+    background-color:#DDDDDD;
+    width: 70%;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.gumb, .gumb2, .gumb3, .gumb4{
+    background-color: #e4433c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 15px; 
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.gumb3, .gumb4{
+    padding: 5px 10px;
+    width: auto;
+}
+.gumb4{
+    margin-left: 35%
+}
+
+.gumb2{
+   margin-left: 120px;
+   margin-bottom: 20px;
+}
+
+.gumb:hover, .gumb2:hover, .gumb3:hover, .gumb4:hover{
+    background-color: #e1100c;
+    color: white;
+}
+
+.gumb:active, .gumb2:active, .gumb3:active, .gumb4:active{
+    background-color: #f0000f;
+    color: white;
+}
+
+.browse{
+   height: 30px;
+}
+
+input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+}
+
+#greske1, #greske2, #greske3{
+    font-size: 18px;
+    color: red;
+    margin-left: 15%;
+}
+
+.fokus{
+    height: 21px; 
+    width: 220px;
+    border-color: #0066ff;
+    border-style: double;
+}
+
+.fokuss{
+    height: 20px; 
+    width: 300px;
+    border-color: #0066ff;
+    border-style: double;
+}
+
+.input1{
+    width: 300px;
+    height: 20px;       
+}
+.input2{
+    width: 220px;
+    height: 20px; 
+}
+.input3{
+    width: 150px;
+    height: 20px;
+}
+
+.input4{
+    margin: 8px;
+}
+
+.naslov {
+    color: #e4433c;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.podnaslov{
+    color: #e4433c;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table{ 
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+
+@media only screen and (max-width : 1050px) and (min-width : 451px) {
+    video{
+        width: 90%;
+    }
+    header {
+        background-image: none;
+    }
+    label{
+        margin-left: 5%;
+    }
+    .input1{
+        width: 55%;
+        height: 20px;       
+    }
+    .input2{
+        width: 50%;
+        height: 20px; 
+    }
+    .input3{
+        width: 40%;
+        height: 20px;
+    }
+    .label3{
+        margin-top: 5%;
+        width: 80%;
+    }
+    .zapamti{
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width : 720px) and (min-width : 100px) {
+    #meni > ul li a {
+       padding: 10px 7.5%;
+    }
+    section#sadrzaj{
+        width:90%;        
+        margin-left: 2%;
+    }
+    form{
+        width: 90%;
+    }
+    video{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width : 455px) and (min-width : 100px) {
+      
+    header {
+        background-image: none;
+        font-size: large;
+    }
+
+    section#sadrzaj{
+        width:90%;
+    }
+    
+    nav#meni, nav#meni1{
+        width:80%;
+        margin-left: 10%;
+    }
+    
+    #meni > ul, #meni1 > ul  {
+        text-align: center;
+    }
+    
+    #meni > ul li a, #meni1 > ul li a {
+        border-top: 1px dotted #000000;
+        padding: 12px 20px;
+        border-left: none;
+        display: block;
+        float: none;
+    }
+        
+    #meni > ul li:first-child a, #meni1 > ul li:first-child a{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top-style: none;
+    }
+
+    #meni > ul li:last-child a, #meni1 > ul li:last-child a {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0;
+    }
+    
+    label {  
+        margin-left: 5%;
+    }
+    .input1{
+        width: 60%;
+        height: 20px;       
+    }
+    .input2{
+        width: 50%;
+        height: 20px; 
+    }
+    .input3{
+        width: 40%;
+        height: 20px;
+    }
+    .label3{
+        margin-top: 5%;
+        width: 80%;
+    }
+
+}

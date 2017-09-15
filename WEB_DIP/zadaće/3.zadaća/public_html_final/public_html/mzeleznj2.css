@@ -1,0 +1,403 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 15, 2017, 4:36:40 PM
+    Author     : Maja
+*/
+
+header {
+    font-family: "Times New Roman";
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #FFFFFF;
+    height: 100px;
+    background-color: #990033;       
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+#naslovna {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#footer {
+    background-color: #990033;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    font-size: 11px;  
+    margin:200px 0px 0px 0px;  
+    padding-bottom: 10px;
+    clear:both;
+}
+
+#css3 {
+    position: absolute;
+    left: 500px;  
+}
+
+#html5 {
+    left: 550px;
+    padding-top: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+#meni > ul {  
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 0;
+    width: 13%;
+    background-color: #990033;
+    position: absolute;
+    height: 60%;   
+}
+
+#meni> ul li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+#sadrzaj{
+    margin-left:15%;
+    padding:1px 16px;
+    margin-top: 10px;        
+}
+
+.sjena {
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+figure > img:hover {
+    z-index: 2;
+}
+
+
+#forma {
+    padding: 20px;
+    width: 40%;
+    height: 300px;     
+    position:relative;
+    float:left; 
+    margin-bottom: 50px; 
+    clear: both;
+}
+
+#forma #pozivniBrojButton {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#registracija input {
+     margin-top: 5px;
+    margin-bottom: 5px; 
+    margin-left:20px
+}
+
+#registracija label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+}
+
+#prijava #korime {
+    margin: 20px 0px 20px 10px;
+}
+
+#prijava #lozinka {
+    margin: 0px 0px 20px 56px;
+}
+
+#submit {
+   margin: 20px 10px 10px 116px;     
+     padding: 8px 20px;
+     cursor: pointer;
+}
+
+#prijava {
+    margin: 15px 20px 15px 20%; 
+    padding-left: 10px;
+    width: 40%;
+    background-color: #f2f2f2;
+}
+
+.labela {
+    float:left;
+}
+
+.input {
+    margin: 0px 0px 10px 10px;
+}
+
+table {
+    border: 2px dotted #990033;
+}
+
+.inputOk {
+	background: #00EE76;
+	
+}
+
+.inputError {
+	background: #FFA07A;
+}
+
+#greske {
+    color: red;
+}
+
+.greska::before {
+    content: '!';
+    font-weight: bold;
+    color: red;
+}
+
+#modal {
+    display: none;
+    background-color: white;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    top: 110px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    border: 1px solid red
+}
+
+#modal img {
+    max-height: 300px;
+}
+
+#triSLike {
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 480px) {
+   
+    body {
+        font-family: "Arial";
+        font-size: 8px;       
+    }
+    
+    p {
+        font-size: 8px;
+    }
+    
+    figcaption {
+        font-size: large;
+    }
+       
+    ul li {
+       font-size: 8px; 
+    }
+    
+    #meni>ul {
+        width: 16%;
+        background-color: #990033;
+    }
+       
+    #meni> ul li a {
+        display:block;
+        color: #fff;
+    }
+
+    #triSLike {
+        visibility:hidden;
+    }
+
+    #osobnaSlika {
+         display: none;
+    }
+    
+    #naslovna {
+        display: none;
+    }
+    .redak4 {
+        display:none;
+    }
+    .redak5 {
+        display:none;
+    }
+    
+    #sadrzaj figure {
+        display:none;
+    }
+    
+    #footer figure {
+        display:none;
+    }
+       
+    #forma {
+        background-color: #fff;
+        width: 100%;            
+    }
+    
+    #registracija input {
+         font-size:8px;
+         height:10px;
+         width:90px;
+    }
+
+    #registracija #gumb {
+        height:15px;
+         width:70px;
+         margin-left: 90px;
+    }
+    
+    #registracija label {
+        float: left;
+        padding-top: 5px;
+        display: inline-block;
+        text-align: right;
+        width: 70px;
+    }
+    
+    #prijava {
+        width: 70%;
+        background-color: #fff;
+        float:left;
+    }
+    
+    #meni > ul {
+        height:40%;
+    }
+    
+    #prijava input {
+        font-size:8px;
+        height:8px;
+        width:55px;
+        margin-left:5px;
+        text-align: center;
+    }
+    
+    #prijava #lozinka{
+        margin-left:34px;
+    }
+    
+    #submit {
+        margin-left: 5px;
+        background-color: #f0f5f5;
+        padding: 10px ;
+     }
+
+    #prijava label {
+        margin:0px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width:1024px) {
+    
+     body {
+        font-family: "Courier";
+        font-size: 10px;
+    }
+      
+    #naslovna {
+        display: none;
+    }
+
+    #triSLike {
+        visibility: hidden;
+    }
+    
+    #meni>ul {
+        width: 16%;
+    }
+    
+     ul li {
+       font-size: 8px; 
+    }
+    
+    .redak5 {
+        display:none;
+    }
+    
+    #osobnaSlika img {
+        width: 70px;
+        height:100px;
+    }
+    
+    figcaption #naslov {
+        font-size: x-large;
+    }
+    
+    #sadrzaj figcaption {
+        display:none;
+    }
+    
+    #footer figure {
+        display:none;
+    }
+    
+    #forma {
+        background-color: #fff;
+        width: 100%;
+    }
+    
+     #registracija input {
+         font-size:10px;
+         height:15px;
+         width:120px;
+    }
+    
+    #registracija #gumb {
+        height:20px;
+         width:80px;
+         margin-left: 160px;
+    }
+    
+    #prijava {
+        width: 70%;
+        background-color: #fff;
+        float:left;
+    }
+    
+    #meni > ul {
+        height:40%;
+    }
+    
+    #prijava input {
+        font-size:8px;
+        height:8px;
+        width:60px;
+        margin-left:5px;
+        text-align: center;
+    }
+    
+    #prijava #lozinka {
+        margin-left:34px;
+    }
+    
+    #submit {
+        margin-left: 5px;
+        background-color: #f0f5f5;
+        padding: 10px ;
+    }
+    
+    #prijava label {
+        margin:0px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        font-family: "Times New Roman";
+        font-size: xx-large;
+    }
+}

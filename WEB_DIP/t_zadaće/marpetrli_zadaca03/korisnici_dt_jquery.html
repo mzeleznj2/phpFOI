@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html id="kori">
+    <head>
+    	<title>Stranica s korisnicima</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marko Petrlić">
+        <meta name="keywords" content="FOI, WebDiP, Zadaća 3">
+        <link rel="stylesheet" type="text/css" href="css/marpetrli.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>> 
+        <script type="text/javascript" src="js/marpetrli_jquery.js"></script>
+        
+    </head>
+    <body> 
+		<header>
+			<img src="logo.png" alt="Logo">
+			<h1>
+				Zadaća 3
+			</h1>
+		</header>
+		
+		<nav>
+		    <ol>
+		    	<li><a href="index.html">Početna</a></li>
+		    	<li><a href="registracija.html">Registacija</a></li>
+		    	<li><a href="prijava.html">Prijava</a></li>
+		    	<li><a href="registracija_jquery.html">Registracija jquery</a></li>
+		    	<li><a href="korisnici_jquery.html">Korinsici jquery</a></li>
+		    	<li><a href="gen_korisnici_jquery.html">Generirani korisnici jquery</a></li>
+		    </ol>
+		</nav>
+		
+		<section>
+			<h2>
+				Korisnici
+			</h2>
+			<table  id="tablica" style="width: 100%">
+				<caption>Korisnici</caption>
+				<tr>
+					<th>Ime</th>
+			    	<th>Prezime</th>
+			    	<th>Korisničko ime</th>
+			    	<th>Lozinka</th>
+			    	<th>Ponovljena lozinka</th>
+			    	<th>Enkripcija</th>
+			    	<th colspan="3"> Rođendan</th>
+			    	<th>Spol</th>
+			    	<th>Država</th>
+			    	<th>Telefon</th>
+			    	<th>Email</th>
+			    	<th>Nisam robot</th>
+			    	<th>Lokacija</th>
+			    	<th>Slika</th>
+			    	<th>Obavijesti</th>
+			  	</tr>
+			  	<tr>
+			    	<td>Marko</td>
+			    	<td>Petrlić</td>
+			    	<td>markopoloparadox</td>
+			    	<td>admin</td>
+			    	<td>admin</td>
+			    	<td>Visoka</td>
+			    	<td>12</td>
+			    	<td>Travanj</td>
+			    	<td>1994</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>095 8548082</td>
+			    	<td>admin@admin.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Potočka ulica 61, 48260 Križevci</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Ivan</td>
+			    	<td>Horvat</td>
+			    	<td>ivhor</td>
+			    	<td>123456</td>
+			    	<td>123456</td>
+			    	<td>Visoka</td>
+			    	<td>01</td>
+			    	<td>Studeni</td>
+			    	<td>1965</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>099 6835401</td>
+			    	<td>ivhor@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Vijenac Petrove gore 2, 31000 Osijek</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Ne</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Marija</td>
+			    	<td>Anić</td>
+			    	<td>marani</td>
+			    	<td>password</td>
+			    	<td>password</td>
+			    	<td>Visoka</td>
+			    	<td>08</td>
+			    	<td>Svibanj</td>
+			    	<td>1969</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>095 7903251</td>
+			    	<td>marani@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Košut Lajoš 47A, 31327 Vardarac</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Ana</td>
+			    	<td>Sokač</td>
+			    	<td>anasok</td>
+			    	<td>12345</td>
+			    	<td>12345</td>
+			    	<td>Visoka</td>
+			    	<td>21</td>
+			    	<td>Siječanj</td>
+			    	<td>1990</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>091 9516784</td>
+			    	<td>anasok@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Žutnička 14A, 10000 Zagreb</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Stjepan</td>
+			    	<td>Švagelj</td>
+			    	<td>stjsva</td>
+			    	<td>12345678</td>
+			    	<td>12345678</td>
+			    	<td>srednja</td>
+			    	<td>30</td>
+			    	<td>Lipanj</td>
+			    	<td>1977</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>095 7094836</td>
+			    	<td>stjsva@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td> Božidara Magovca 62, 10000 Zagreb</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Katica</td>
+			    	<td>Crnčić</td>
+			    	<td>katcrn</td>
+			    	<td>qwerty</td>
+			    	<td>qwerty</td>
+			    	<td>Visoka</td>
+			    	<td>02</td>
+			    	<td>Prosinac</td>
+			    	<td>1992</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>097 6951243</td>
+			    	<td>katcrn@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Alojzija Stepinca 6, 34000 Požega</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Dragutin</td>
+			    	<td>Stručić</td>
+			    	<td>drastr</td>
+			    	<td>123456789</td>
+			    	<td>123456789</td>
+			    	<td>Visoka</td>
+			    	<td>16</td>
+			    	<td>Kolovoz</td>
+			    	<td>1984</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>095 4175390</td>
+			    	<td>drastr@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Neretvanska 18, 31431 Čepin</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Ivana</td>
+			    	<td>Babić</td>
+			    	<td>ivabab</td>
+			    	<td>baseball</td>
+			    	<td>baseball</td>
+			    	<td>Visoka</td>
+			    	<td>25</td>
+			    	<td>Siječanj</td>
+			    	<td>1996</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>091 9136508</td>
+			    	<td>ivabab@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Franca Liszta 21, 31300 Beli Manastir</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Ne</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Franjo</td>
+			    	<td>Novosel</td>
+			    	<td>franov</td>
+			    	<td>dragon</td>
+			    	<td>dragon</td>
+			    	<td>Visoka</td>
+			    	<td>05</td>
+			    	<td>Rujan</td>
+			    	<td>1994</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>095 7420358</td>
+			    	<td>franov@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Oporovečki vinogradi 90B, 10000 Zagreb</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Ne</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Dragica</td>
+			    	<td>Kemenović</td>
+			    	<td>drakem</td>
+			    	<td>football</td>
+			    	<td>football</td>
+			    	<td>srednja</td>
+			    	<td>17</td>
+			    	<td>Studeni</td>
+			    	<td>1976</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>097 8230179</td>
+			    	<td>drakem@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Tina Ujevića 34, 40000 Čakovec</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Ne</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Marijan</td>
+			    	<td>Lukačić</td>
+			    	<td>marluk</td>
+			    	<td>monkey</td>
+			    	<td>monkey</td>
+			    	<td>Visoka</td>
+			    	<td>13</td>
+			    	<td>Travanj</td>
+			    	<td>1980</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>097 5032789</td>
+			    	<td>marluk@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Krste Hegedušića 35, 42000 Varaždin</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Štefica</td>
+			    	<td>Kos</td>
+			    	<td>stekos</td>
+			    	<td>letmein</td>
+			    	<td>letmein</td>
+			    	<td>Visoka</td>
+			    	<td>16</td>
+			    	<td>Svibanj</td>
+			    	<td>1989</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>095 1798435</td>
+			    	<td>stekos@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Trg slobode 6A, 48000 Koprivnica </td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Matija</td>
+			    	<td>Višak</td>
+			    	<td>matvis</td>
+			    	<td>abc123</td>
+			    	<td>abc123</td>
+			    	<td>srednja</td>
+			    	<td>27</td>
+			    	<td>Lipanj</td>
+			    	<td>1990</td>
+			    	<td>Muški</td>
+			    	<td>Hrvatska</td>
+			    	<td>091 6418230</td>
+			    	<td>matvis@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Cvjetkova 32, 31000 Osijek</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Martina</td>
+			    	<td>Novak</td>
+			    	<td>marnov</td>
+			    	<td>111111</td>
+			    	<td>111111</td>
+			    	<td>Visoka</td>
+			    	<td>24</td>
+			    	<td>Veljača</td>
+			    	<td>1984</td>
+			    	<td>Ženski</td>
+			    	<td>Hrvatska</td>
+			    	<td>091 4982170</td>
+			    	<td>marnov@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td> Mihovila Pavleka Miškine 15, 48332 Ždala</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Mario</td>
+			    	<td>Međimurec</td>
+			    	<td>marmed</td>
+			    	<td>mustang</td>
+			    	<td>mustang</td>
+			    	<td>Visoka</td>
+			    	<td>09</td>
+			    	<td>Kolovoz</td>
+			    	<td>1989</td>
+			    	<td>Muški</td>
+			    	<td>Slovenija</td>
+			    	<td>099 8174652</td>
+			    	<td>marmed@gmail.com</td>
+			    	<td>Pozitivno</td>
+			    	<td>Ulica Moše Pijada 21, 2000 Maribor, Slovenija</td>
+			    	<td><img src="marpetrli.jpg" alt="slikemene" width="55" height="55"></td>
+			    	<td>Da</td>
+			  	</tr>
+
+			</table>
+		</section>
+		
+		<footer style="background-color: yellow;">
+		    Vrijeme potrebno za rješavanje zadatak: 6 sati
+		    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_02%2Fmarpetrli%2Fkorisnici.html">
+				<img src="img/HTML5.png" height="50" width="50" alt="HTML5">
+			</a>
+		    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_02%2Fmarpetrli%2Fkorisnici.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+				<img src="img/CSS3.png" height="50" width="50" alt="CSS3">
+			</a>
+		</footer>
+    </body>
+</html>

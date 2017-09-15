@@ -1,0 +1,1223 @@
+button{
+	left:500px;
+	width: 180px;
+	height: 50px;
+	background-color: LightSlateGray;
+	text-align: center;
+	border-radius: 7px;
+	border-width: 2px;
+	border-color: #4d5966;
+	box-shadow: 7px 7px 3px #888888;
+	color: white;
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+.marquee {
+    width: 400px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;  /* show the marquee just outside the paragraph */
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+img
+{
+	box-shadow: 3px 3px 3px #888888;
+	width: 200px;
+	height: auto;
+}
+
+.tablica1
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: LightSlateGray;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    background-color: LightSlateGray;
+}
+
+#slikaJedan:hover
+{
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		-webkit-transform:scale(1.25);
+		-moz-transform:scale(1.25);
+		-ms-transform:scale(1.25);
+		-o-transform:scale(1.25);
+		transform:scale(1.25);
+}
+#slikaDva:hover
+{	
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		-webkit-transform:scale(1.25);
+		-moz-transform:scale(1.25);
+		-ms-transform:scale(1.25);
+		-o-transform:scale(1.25);
+		transform:scale(1.25);
+}
+#slikaTri:hover
+{
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		-webkit-transform:scale(1.25);
+		-moz-transform:scale(1.25);
+		-ms-transform:scale(1.25);
+		-o-transform:scale(1.25);
+		transform:scale(1.25);
+}
+
+article:hover
+{
+   box-shadow: 5px 5px 5px	#cceeff;
+   border-color: #cceeff;
+}
+
+a:hover
+{
+   box-shadow: 5px 5px 5px	#cceeff;
+}
+
+a:visited
+{
+	color: LightSlateGray;
+}
+header
+{
+background-color: LightSlateGray; 
+box-shadow: 7px 7px 3px #888888;	
+}
+
+th, td {
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+button:link, button:visited{
+    color: #adb7c1;
+}
+
+button:hover, button:active
+{
+	background-color: #adb7c1;
+    color: #FFF;
+}
+
+
+#navi{
+	background-color: #e6e6e6; 
+	float: left;
+	left: 5px;
+	padding-top: 15px;
+}
+#b{
+	background-color: #e6e6e6;
+}
+
+#list
+{
+float: left;
+margin-right: 5px;
+text-align: left;
+line-height: 3;
+}
+
+#ja
+{
+	width: 100px;
+	height: auto;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+#slika
+{
+	width: 18%;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+sadrzaj{
+	top: 5px;
+	margin: auto;
+    width: 60%;
+    padding: 10px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+}
+
+#autor
+{
+		text-align: center;
+}
+
+article {
+    border-style: solid;
+    border-width: 2px;
+    padding-top:5px;
+    padding-bottom: 10px;
+    border-color: #e6e6e6;
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-left: 3%;
+	margin-top: 10px;
+	width: auto;
+    height:300px;
+}
+
+#foot{
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+
+#korime
+{
+	float: right; 
+	margin-right: 8%; 
+	width: 300px;
+}
+
+#loz
+{
+	float: right; 
+	margin-right: 8%; 
+	width: 300px;
+}
+
+
+#prijava
+{
+	float: right; 
+	margin-right: 8%; 
+	width: 300px;
+	background-color: LightSlateGray;
+	color: white;
+	border-width: 0px;
+	border-width: 0px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#regi
+{
+	background-color: LightSlateGray;
+	color: white;
+	border-width: 0px;
+	border-width: 0px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#slikaDva
+{
+	margin-left: 80px;
+	margin-top: -80px;
+}
+
+#slikaTri
+{
+	margin-left: 160px;
+	margin-top: -80px;
+}
+
+
+@media screen and (min-width:200px) and (orientation:portrait){
+#navi {
+			width: 80%;
+			margin-left: 5%;
+			margin-right: auto;
+    }
+	#korime
+	{
+		width: 150px;
+		float: left;
+	}
+	#loz
+	{
+		width: 150px;
+		float: left;
+	}
+	form
+	{
+		float: left;
+		margin-left: 5%;
+	}
+	section
+	{
+		height: 350px;
+	}
+	label 
+	{
+		font-family: Arial;
+		font-size: 8px;
+	}
+	input
+	{
+		font-family: Arial;
+		font-size: 8px;
+	}
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+	#slikaDva
+	{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	#slikaTri
+	{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#slikeProizvoda
+	{
+		padding-left: 50px;
+	}
+     #sadrzaj{
+		clear:both;
+		margin-top: 390px;
+		margin-right: auto;
+		width: 95%;
+		padding: 10px;
+		background-color: white;
+		border-radius: 2%;
+		box-shadow: 7px 7px 3px #888888;
+		height: 780px;
+	}
+	#sadrzajI{
+		clear:both;
+		margin-top: 390px;
+		margin-right: auto;
+		width: 95%;
+		padding: 10px;
+		background-color: white;
+		border-radius: 2%;
+		box-shadow: 7px 7px 3px #888888;
+		height: 2050px;
+	}
+	#naslov
+	{
+		text-align: left;
+	}
+    #ja{
+		visibility: hidden;
+	}
+	button
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+		font-family: Arial;
+		font-size: 8px;
+	}
+    #b{
+        font-family: Arial;
+		font-size: 8px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    #slika1
+	{
+		width: 75px;
+		height: 75px;
+	}
+	#slika2
+	{
+		height: 75px;
+		width: 75px;
+	}
+	#slika3
+	{
+		width: 75px;
+		height: 75px;
+	}
+
+    #prvi {
+        height: 40%;
+        width: 40%;
+    }
+    
+    #drugi {
+        height: 25%;
+        width: 25%;
+    }
+    #treci {
+        height: 15%;
+        width: 15%;
+    }
+    
+	#list
+	{
+	float: left;
+	margin-right: 5px;
+	text-align: left;
+	line-height: 1;
+	}
+	
+	#foot 
+	{
+	clear:both;
+    bottom:0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+    form 
+	{
+       height: 10%;
+        width: 10%;
+        margin: auto;
+        font-size: 10px;
+    }	
+    textArea 
+	{
+        height: 10%;
+        width: 80%;
+    }
+    th:nth-child(1n+4) 
+	{
+        display: none;
+    }
+    td:nth-child(1n+4) 
+	{
+        display: none;
+    }  
+}
+
+@media screen and (min-width:480px) and (orientation:portrait) {
+        #navi {
+			margin-left: 2%;
+			margin-right: auto;
+			width: 90%;
+    }
+	#ja
+	{
+		visibility: visible;
+	}
+	input
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+		float: left;
+		margin-left: 10px;
+		padding-top: 5px;
+		margin-bottom: 5px;
+	}
+	label 
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+		float: left;
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+     #sadrzajI{
+		 clear: both;
+	margin-top: 390px;
+	margin-left: auto;
+    width:90%;
+    padding: 7px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	height: 2030px;
+}
+	#sadrzaj{
+		 clear: both;
+	margin-top: 390px;
+	margin-left: auto;
+    width:90%;
+    padding: 7px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	height: 780px;
+}
+	#slika1
+	{
+		width: 75px;
+		height: 75px;
+	}
+	#slika2
+	{
+		height: 75px;
+		width: 75px;
+	}
+	#slika3
+	{
+		width: 75px;
+		height: 75px;
+	}
+	#list
+	{
+	float: left;
+	margin-right: 5px;
+	text-align: left;
+	line-height: 2;
+	}
+    button
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+		font-family: TimesNewRoman;
+		font-size: 10px;
+	}
+    #b{
+        font-family: TimesNewRoman;
+		font-size: 10px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+
+    #prvi {
+        height: 40%;
+        width: 40%;
+    }
+    
+    #drugi {
+        height: 25%;
+        width: 25%;
+    }
+    #treci {
+        height: 30%;
+        width: 30%;
+    }
+     
+	form
+	{
+		float: left;
+		margin-left: 20%;
+	}
+	section
+	{
+		height: 350px;
+	}
+
+  #foot{
+	  clear:both;
+
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+    form {
+       height: 10%;
+        width: 10%;
+        margin: auto;
+        font-size: 20px;
+    }
+    textArea {
+        height: 10%;
+        width: 380px;
+    }
+    th:nth-child(1n+8) {
+        display: none;
+    }
+    td:nth-child(1n+8) {
+        display: none;
+    }
+     
+    
+}
+	
+@media screen and (min-width:800px) and (orientation:portrait) {
+    #navi {
+			margin-left: 2%;
+			margin-right: auto;
+			width: 90%;
+    }
+	#korime
+	{
+		float: left;
+	}
+	#loz
+	{
+		float: left;
+	}
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+	#slika1
+	{
+		width: 75px;
+		height: 75px;
+	}
+	#slika2
+	{
+		height: 75px;
+		width: 75px;
+	}
+	#slika3
+	{
+		width: 75px;
+		height: 75px;
+	}
+    #sadrzaj{
+
+	clear: both;
+	margin-top: 400px;
+    width: 90%;
+	left: 15px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	height: 780px;
+	}
+	#sadrzajI{
+
+	clear: both;
+	margin-top: 400px;
+    width: 90%;
+	left: 15px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	height: 2050px;
+	}
+    button
+	{
+		font-family: Sans;
+		font-size: 12px;
+		margin-left: 3%;
+		margin-right: auto;
+		width:100%;
+		font-family: TimesNewRoman;
+		font-size: 10px;
+	}
+    #b {
+        font-family: Sans;
+		font-size: 12px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+
+    #prvi {
+        height: 70%;
+        width: 70%;
+    }
+    
+    #drugi {
+        height: 50%;
+        width: 50%;
+    }
+    #treci {
+        height: 30%;
+        width: 30%;
+    }
+     
+}
+
+@media screen and (min-width: 1024px) and (orientation:portrait) {
+    #navi {
+			margin-left: 2%;
+			margin-right: auto;
+			width: 90%;
+    }
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+	#slika1
+	{
+		width: 75px;
+		height: 75px;
+	}
+	#slika2
+	{
+		height: 75px;
+		width: 75px;
+	}
+	#slika3
+	{
+		width: 75px;
+		height: 75px;
+	}
+	#sadrzaj{
+
+	clear: both;
+	margin-top: 400px;
+    width: 90%;
+	left: 15px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	height: 780px;
+	}
+    #sadrzajI{
+
+	clear: both;
+	margin-top: 400px;
+    width: 90%;
+	left: 15px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	height: 2050px;
+	}
+	#korime
+	{
+		float: left;
+	}
+	#loz
+	{
+		float: left;
+	}
+    button
+	{
+		font-family: Sans;
+		font-size: 12px;
+		margin-left: 3%;
+		margin-right: auto;
+		width:100%;
+		font-family: TimesNewRoman;
+		font-size: 10px;
+	}
+    #b {
+        font-family: Sans;
+		font-size: 12px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+	#list
+	{
+	float: left;
+	margin-right: 5px;
+	text-align: left;
+	line-height: 2;
+	}
+
+    #prvi {
+        height: 70%;
+        width: 70%;
+    }
+    
+    #drugi {
+        height: 50%;
+        width: 50%;
+    }
+    #treci {
+        height: 30%;
+        width: 30%;
+    }
+     form
+	{
+		float: left;
+	}
+	label
+	{
+		padding-top: 5px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (orientation:portrait) {
+	#korime
+	{
+		float: left;
+	}
+	#loz
+	{
+		float: left;
+	}
+	
+	form
+	{
+		float: left;
+		height: 10%;
+		width: 10%;
+		margin-left: 300px;
+	}	
+	section
+	{
+		height: 450px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (orientation:landscape) {
+   #navi {
+       height: auto;
+       width: auto;
+       float:left;
+       margin: auto;
+	   position: fixed;
+    }
+	#slikeProizvoda
+	{
+		padding-left: 150px;
+	}
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+     #sadrzaj{
+	top: 5px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+}
+	#sadrzajI{
+	top: 5px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+}
+    button
+	{
+		font-family: Helvetica;
+		font-size: 12px;
+		margin-left: 130px;
+	}
+    #b {
+        font-family: Helvetica;
+		font-size: 12px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+
+    #prvi {
+        height: 70%;
+        width: 70%;
+    }
+    
+    #drugi {
+        height: 25%;
+        width: 25%;
+    }
+    #treci {
+        height: 30%;
+        width: 30%;
+    }
+     
+	
+
+  #foot{
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+    form {
+       height: auto;
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+    }
+    label {
+        font-size: 20px;
+    }
+    textArea {
+        height: 10%;
+        width: 100%;
+    }
+	input
+	{
+		margin-right: 150px;
+		font-family: Helvetica;
+		font-size: 12px
+	}
+	label 
+	{
+		font-family: Helvetica;
+		font-size: 12px;
+	}
+  
+    
+}
+
+@media screen and (max-width:1450px) and (orientation: landscape)
+{
+	#slikeProizvoda
+	{
+		padding-left: 100px;
+	}
+	input
+	{
+		margin-right: 150px;
+		font-family: Helvetica;
+		font-size: 12px
+	}
+	label 
+	{
+		font-family: Helvetica;
+		font-size: 12px;
+	}
+	#list
+	{
+	 line-height: 1;
+	}
+	button
+	{
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation:landscape) {
+     #navi {
+		 position: fixed;
+       height: auto;
+       width: auto;
+       float:left;
+       margin: auto;
+    }
+	label 
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+	}
+	input
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+	}
+	#slikeProizvoda
+	{
+		padding-left: 20px;
+	}
+	#korime
+	{
+		float: left; 
+		margin-left: 5px; 
+	}
+
+	#loz
+	{
+		float: left; 
+		margin-left: 5px; 
+	}
+	#prijava
+	{
+		float: left; 
+		width: 105px;
+	}
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+     #sadrzaj{
+	top: 5px;
+	margin-left: 35%;
+	margin-right: 0%;
+    width: 50%;
+    padding: 10px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	}
+	#sadrzajI{
+	top: 5px;
+	margin-left: 35%;
+	margin-right: 0%;
+    width: 50%;
+    padding: 10px;
+	background-color: white;
+	border-radius: 2%;
+	box-shadow: 7px 7px 3px #888888;
+	}
+    button
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+	}
+    #b {
+        font-family: TimesNewRoman;
+		font-size: 10px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+
+    #prvi {
+        height: 70%;
+        width: 70%;
+    }
+    
+    #drugi {
+        height: 40%;
+        width: 40%;
+    }
+    #treci {
+        height: 30%;
+        width: 30%;
+    }
+     
+	
+
+    #foot{
+		clear: both;
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+    form {
+       height: 50%;
+        width: 50%;
+       
+        font-size: 20px;
+    }
+    textArea {
+        height: 50%;
+        width: 600px;
+    }
+    th:nth-child(1n+4) {
+        display: none;
+    }
+    td:nth-child(1n+4) {
+        display: none;
+    }
+     
+}
+
+@media screen and (max-width:750px) and (orientation:landscape) {
+	#navi {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+    }
+	form
+	{
+		float: left;
+	}
+	#slikeProizvoda
+	{
+		padding-left: 50px;
+	}
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+     #sadrzaj{
+		 clear: both;
+		 margin: auto;
+		 margin-top: 400px;
+		 top: 5px;
+	 	 width: 90%;
+		 padding: 10px;
+		 background-color: white;
+		 border-radius: 2%;
+		 box-shadow: 7px 7px 3px #888888;
+		 height: 2050px;
+}
+	#sadrzajI{
+		 clear: both;
+		 margin: auto;
+		 margin-top: 400px;
+		 top: 5px;
+	 	 width: 90%;
+		 padding: 10px;
+		 background-color: white;
+		 border-radius: 2%;
+		 box-shadow: 7px 7px 3px #888888;
+		 height: 2050px;
+}
+    button
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+		width: 100%;
+		margin-left: 4%;
+	}
+    #b{
+        font-family: TimesNewRoman;
+		font-size: 10px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+
+    #prvi {
+        height: 90%;
+        width: 90%;
+    }
+    
+    #drugi {
+        height: 70%;
+        width: 70%;
+    }
+    #treci {
+        height: 40%;
+        width: 40%;
+    }
+     
+	
+
+  #foot{
+	  clear: both;
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+    form {
+       height: 10%;
+        width: 10%;
+        margin: auto;
+        font-size: 20px;
+    }
+    label {
+        font-size: 10px;
+		padding-top: 5px;
+    }
+    textArea {
+        height: 100%;
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width:480px) and (orientation:landscape) {
+    #navi {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+    }
+    header {
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+	#slikeProizvoda
+	{
+		padding-left: 0px;
+	}
+     #sadrzaj{
+		 clear: both;
+		 margin: auto;
+		 margin-top: 400px;
+		 top: 5px;
+		 width: 90%;
+	 	 padding: 10px;
+	 	 background-color: white;
+	   	 border-radius: 2%;
+		 box-shadow: 7px 7px 3px #888888;
+}
+	     #sadrzajI{
+		 clear: both;
+		 margin: auto;
+		 margin-top: 400px;
+		 top: 5px;
+		 width: 90%;
+	 	 padding: 10px;
+	 	 background-color: white;
+	   	 border-radius: 2%;
+		 box-shadow: 7px 7px 3px #888888;
+}
+	#ja{
+		visibility: hidden;
+	}
+    button
+	{
+		font-family: TimesNewRoman;
+		font-size: 10px;
+		width: 100%;
+		margin-left: 4%;
+	}
+    #b{
+        font-family: Arial;
+		font-size: 8px;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
+
+    #prvi {
+        height: 90%;
+        width: 90%;
+    }
+    
+    #drugi {
+        height: 70%;
+        width: 70%;
+    }
+    #treci {
+        height: 40%;
+        width: 40%;
+    }
+     
+	#zapamti
+	{
+		overflow: hidden;
+		text-overflow: clip;
+	}
+
+  #foot{
+	  clear: both;
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+    form {
+       height: 10%;
+        width: 10%;
+        margin: auto;
+        font-size: 20px;
+    }
+    label {
+		font-family: Arial;
+        font-size: 8px;
+    }
+    textArea {
+        height: 100%;
+        width: 100%;
+    }
+    
+   
+    
+}

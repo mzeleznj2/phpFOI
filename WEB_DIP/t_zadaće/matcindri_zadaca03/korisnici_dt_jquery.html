@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Korisnici_dt_jquery</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Mateo Cindric">
+        <meta name="keywords" content="FOI, WebDiP">
+        <meta name="description" content="Korisnici">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/matcindri.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.js"></script>             
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.css"/>   
+        <script type="text/javascript" src="js/matcindri_jquery.js" ></script>
+    </head>
+    <body>
+       <header id="zaglavlje">
+                <h1>Mateo Cindrić</h1>
+                <img src="img/logo.png" alt="FOI logo">                
+        </header>
+      
+        <hr>   
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li> 
+                <li><a href="prijava.html">Prijava</a></li>
+                <li><a href="registracija.html">Registracija</a></li>
+                <li><a href="registracija_jquery.html">Registracija jquery</a></li>
+                <li><a href="korisnici_jquery.html">Korisnici jquery</a></li>
+                <li><a href="gen_korisnici_jquery.html"> Gen korisnici jquery</a></li>
+            </ul>
+        </nav>
+        
+         <section id="sadrzaj">
+         <h2 style="text-align: center" >Korisnici_dt_jquery</h2>    
+         <table id="korisnici" class="display"> 
+            <caption class="tablica1">Tablica korisnika</caption>    
+            <thead class="tablica1">
+                <tr class="tablica1_zaglavlje">
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Korisničko ime</th>
+                <th>Lozinka</th>
+                <th>Ponovljena lozinka</th>
+                <th>Enkripcija</th>
+                <th>Datum rođenja</th>
+                <th>Spol</th>
+                <th>Mobilni telefon</th>
+                <th>Email adresa</th>
+                <th>Robot</th>
+                <th>Lokacija</th>
+                <th>Slika</th>
+                <th>Obavijesti</th>
+                </tr>
+            </thead>
+            
+            <tbody class="tablica1_sadrzaj">
+                <tr>
+                <td> Ivan</td>
+                <td> Ivanković</td>
+                <td> ivanivank</td>
+                <td> ivan123</td>
+                <td> ivan123</td>
+                <td> High Grade</td>
+                <td> 15.7.1991.</td>
+                <td> Muško</td>
+                <td> Hrvatska 0996543258</td>
+                <td> ivanivank@foi.hr</td>
+                <td> Ne</td>
+                <td> Zagreb</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Katarina</td>
+                <td> Raguž</td>
+                <td> katraguz</td>
+                <td> katarina123</td>
+                <td> katarina123</td>
+                <td> High Grade</td>
+                <td> 5.12.1981.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0916852357</td>
+                <td> katraguz@foi.hr</td>
+                <td> Ne</td>
+                <td> Varazdin</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+                <tr>
+                <td> Iva</td>
+                <td> Siget</td>
+                <td> ivasiget</td>
+                <td> iva12</td>
+                <td> iva12</td>
+                <td> High Grade</td>
+                <td> 12.5.1994.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0958736299</td>
+                <td> ivasiget@foi.hr</td>
+                <td> Ne</td>
+                <td> Kutina</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Janko</td>
+                <td> Krnjak</td>
+                <td> jankokrnj</td>
+                <td> janko55</td>
+                <td> janko55</td>
+                <td> High Grade</td>
+                <td> 15.12.1992.</td>
+                <td> Muško</td>
+                <td> Hrvatska 0996852336</td>
+                <td> jankokrnj@foi.hr</td>
+                <td> Ne</td>
+                <td> Ogulin</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Laura</td>
+                <td> Barbir</td>
+                <td> laurabar</td>
+                <td> laura1</td>
+                <td> laura1</td>
+                <td> High Grade</td>
+                <td> 5.7.1993.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0915821258</td>
+                <td> laurabar@foi.hr</td>
+                <td> Ne</td>
+                <td> Vinkovci</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+                <tr>
+                <td> Josipa</td>
+                <td> Vulić</td>
+                <td> josipavul</td>
+                <td> josipa88</td>
+                <td> josipa88</td>
+                <td> High Grade</td>
+                <td> 18.1.1993.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0919879968</td>
+                <td> josipavul@foi.hr</td>
+                <td> Ne</td>
+                <td> Pula</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+                <tr>
+                <td> Daria</td>
+                <td> Alilović</td>
+                <td> dariaali</td>
+                <td> daria5</td>
+                <td> daria5</td>
+                <td> High Grade</td>
+                <td> 23.6.1995.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0975128258</td>
+                <td> dariaali@foi.hr</td>
+                <td> Ne</td>
+                <td> Zagreb</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Marina</td>
+                <td> Bulić</td>
+                <td> marinabul</td>
+                <td> marina55</td>
+                <td> marina55</td>
+                <td> High Grade</td>
+                <td> 25.11.1981.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0917411458</td>
+                <td> marinabul@foi.hr</td>
+                <td> Ne</td>
+                <td> Rijeka</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+                <tr>
+                <td> Ivona</td>
+                <td> Crnac</td>
+                <td> ivonacrn</td>
+                <td> ivona123</td>
+                <td> ivona123</td>
+                <td> High Grade</td>
+                <td> 31.7.1993.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0996589918</td>
+                <td> ivonacrn@foi.hr</td>
+                <td> Ne</td>
+                <td> Dubrovnik</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+                <tr>
+                <td> Errol</td>
+                <td> Crnko</td>
+                <td> errolcrn</td>
+                <td> errol7</td>
+                <td> errol7</td>
+                <td> High Grade</td>
+                <td> 15.3.1981.</td>
+                <td> Muško</td>
+                <td> Hrvatska 0926582231</td>
+                <td> errolcrn@foi.hr</td>
+                <td> Ne</td>
+                <td> Varaždin</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Ana</td>
+                <td> Nikolic</td>
+                <td> ananiko</td>
+                <td> ana11</td>
+                <td> ana11</td>
+                <td> High Grade</td>
+                <td> 29.9.1990.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0986215842</td>
+                <td> ananiko@foi.hr</td>
+                <td> Ne</td>
+                <td> Čakovec</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Nikola</td>
+                <td> Orešković</td>
+                <td> nikolaor</td>
+                <td> nikola22</td>
+                <td> nikola22</td>
+                <td> High Grade</td>
+                <td> 11.6.1985.</td>
+                <td> Muško</td>
+                <td> Hrvatska 0926546685</td>
+                <td> nikolaor@foi.hr</td>
+                <td> Ne</td>
+                <td> Zlatar</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+                <tr>
+                <td> Martin</td>
+                <td> Arezina</td>
+                <td> martinare</td>
+                <td> martin7</td>
+                <td> martin7</td>
+                <td> High Grade</td>
+                <td> 25.2.1991.</td>
+                <td> Muško</td>
+                <td> Hrvatska 0976325899</td>
+                <td> martinare@foi.hr</td>
+                <td> Ne</td>
+                <td> Nova Gradiška</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Vedran</td>
+                <td> Tometić</td>
+                <td> vedrantom</td>
+                <td> vedran14</td>
+                <td> vedran14</td>
+                <td> High Grade</td>
+                <td> 5.7.1993.</td>
+                <td> Muško</td>
+                <td> Hrvatska 0998523663</td>
+                <td> vedrantom@foi.hr</td>
+                <td> Ne</td>
+                <td> Varaždin</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Ne</td>
+                </tr>
+                
+                <tr>
+                <td> Mihaela</td>
+                <td> Bartolin</td>
+                <td> mihaelabar</td>
+                <td> mihaela522</td>
+                <td> mihaela522</td>
+                <td> High Grade</td>
+                <td> 20.4.1989.</td>
+                <td> Žensko</td>
+                <td> Hrvatska 0989636688</td>
+                <td> mihaelabar@foi.hr</td>
+                <td> Ne</td>
+                <td> Osijek</td>
+                <td> <img src="img/matcindri.jpg" alt="matcindri"></td>
+                <td> Da</td>
+                </tr>
+                
+            </tbody>
+           
+            </table>    
+         </section>
+        
+         <footer id="podnozje">
+                <hr>
+                <p>Vrijeme potrebno za rješavanje aktivnog dokumenta je 7 sati.</p>
+                <p><a href=" https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmatcindri%2Fkorisnici_dt_jquery.html" target="_blank"><img src="img/HTML5.png" alt="html5" width="50" height="50"></a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmatcindri%2Fkorisnici_dt_jquery.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="img/CSS3.png" alt="css3" width="50" height="50"></a></p>
+                <address>Kontakt: <a href="mailto:matcindri.foi.hr" target="_blank">Mateo Cindrić</a></address><br>
+         </footer>
+    </body>
+</html>

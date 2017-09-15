@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Zadaća 3 - Registracija - jquery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/nzvorc.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <script src="js/nzvorc_jquery.js"></script>
+    </head>
+    <body>
+    <hr class="tri"/>
+    <hr class="dva"/>
+    <hr class="jedan"/>
+    <header>
+        Zadaća 3 - JScript/JQuery<br/>
+    </header>
+    <hr class="jedan"/>
+    <hr class="dva"/>
+    <hr class="tri"/>
+    <nav id="meni" style="margin-right: 5%;">
+        <ul>  
+            <li>
+                <a href="index.html">Početna</a>
+            </li>
+            <li>
+                <a href="prijava.html">Prijava</a>
+            </li>
+            <li>
+                <a href="registracija.html">Registracija</a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="meni1" style="margin-right: 5%;">
+        <ul>  
+            <li>
+                <a href="korisnici_jquery.html">Korisnici <br /> jquery</a>
+            </li>
+            <li>
+                <a href="gen_korisnici_jquery.html">Generiranje <br /> korisnika</a>
+            </li>            
+            <li>
+                <a href="registracija_jquery.html">Registracija <br /> jquery</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="sadrzaj">
+        <article id='greske1'>
+        </article>
+        <article id='greske2'>
+        </article>
+        <article id='greske3'>
+        </article> 
+        <article>
+            <form name="registracija" action="http://arka.foi.hr/WebDiP/2013/zadaca_02/ispis_forme.php" method="POST"  >
+                <p class="naslov" >Registracija novog korisnika</p>
+                <label for="ime">Ime</label>
+                <input name="Ime" class="input2" type="text" id="ime" required="" placeholder="Ime"  /><br/>
+                <label for="prezime">Prezime</label>
+                <input name="Prezime" class="input1" type="text" id="prezime" required="" placeholder="Prezime" /><br/>
+                <label for="slika">Slika</label>
+                <input type="file" id="slika" class="browse" /><br/>
+                <label for="adresa">Adresa</label>
+                <input class="input2" type="text" id="adresa" required="" placeholder="Adresa"  /><br/>
+                <label for="grad">Grad</label>
+                <input class="input3" type="text" id="grad" required="" placeholder="Grad"  /><br/>
+                <label for="e-mail">E-mail</label>
+                <input class="input3" type="email" id="email" placeholder="korisnicko@foi.hr" required="" /><br/>
+                <label for="korisnickoIme">Korisničko ime</label>
+                <input class="input2" type="text" id="korisnickoIme" required=""  title="Najmanje 6 znakova!" placeholder="Korisničko ime"  /><br/>
+                <label for="lozinka">Lozinka</label>
+                <input class="input2" type="password" id="lozinka" required=""  title="Najmanje 6 znakova!"  /><br/>
+                <label for="plozinka">Ponovi lozinku </label>
+                <input class="input2" type="password" id="plozinka" required="" title="Najmanje 6 znakova!"  /><br/>
+                <label for="telefon">Telefon</label>
+                <input class="input3" type="tel" id="telefon" placeholder="+385-xx-xxx-xxxx" /><br>
+                <label for="zivotopis">Životopis</label>
+                <textarea id="zivotopis" rows="5" cols="40"  placeholder="Kratak životopis"></textarea><br>
+                <label for="spol">Spol: </label>
+                <select id="spol">
+                    <option value="-1" selected="selected">Odaberi spol</option>
+                    <option value="1" >muški</option>
+                    <option value="2" >ženski</option>
+                </select>
+                <br/>
+                <label class="label2">Želite li primati obavijesti putem e-maila?</label><br/>           
+                <input type="radio" id="d" name="ask" checked="checked" />
+                <label class="label1" for="d">Da</label>
+                <input type="radio" id="n" name="ask" />
+                <label class="label1" for="n">Ne</label><br/>
+                <label class="label3" for="uvjeti">Potvrđujem da sam pročitao i prihvaćam uvjete upotrebe aplikacije</label>
+                <input class="check1" type="checkbox" id="uvjeti" >
+                <br/>
+                <br/>
+                <input type="submit" value="Registriraj se" class="gumb2"/><br/>       
+            </form>
+        </article>
+    </section>
+    <footer id="footer">
+        <a href="http://validator.w3.org/check?uri=http://arka.foi.hr/WebDiP/2013/zadaca_03/nzvorc/registracija_jquery.html"><img src="img/html-5.png" height="100" alt="valid_html" /></a>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://arka.foi.hr/WebDiP/2013/zadaca_03/nzvorc/registracija_jquery.html"><img src="img/css.png" height="100" alt="valid_css" /></a><br />
+        Vrijeme potrebno za riješavanje <b>aktivnog dokumenta / zadaće: 5h / 20h</b>
+       <br/>
+    </footer>
+    </body>
+</html>

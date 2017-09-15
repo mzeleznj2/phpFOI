@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css primjer 5.8.</title>
+        <meta charset="utf-8">            
+        <style type="text/css">
+            .veliko { font-size: 20px; }
+            .crveno { color: red; background: green; font-style: italic; }
+            .plavo { color: blue; background: yellow; font-weight: bold; }
+            .plavo .crveno .veliko { color: pink; }
+            #krivo { color: maroon; }
+        </style>
+    </head>
+    <body>
+        <p class="crveno">ovo je paragraf 1 - crveno 
+            <span class="plavo">ovo je tekst - plavo
+                <span class="veliko">ovo je tekst - veliko</span></span></p>
+        <p class="plavo">ovo je paragraf 2 - plavo 
+            <span class="crveno">ovo je tekst - crveno
+                <span class="veliko" id="krivo">ovo je tekst - veliko</span></span></p>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Zadaća 3 - Prijava</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/nzvorc.css" />
+    </head>
+    <body>
+    <hr class="tri"/>
+    <hr class="dva"/>
+    <hr class="jedan"/>
+    <header>
+        Zadaća 3 - JScript/JQuery<br/>
+    </header>
+    <hr class="jedan"/>
+    <hr class="dva"/>
+    <hr class="tri"/>
+    <nav id="meni" style="margin-right: 5%;">
+        <ul>  
+            <li>
+                <a href="index.html">Početna</a>
+            </li>
+            <li>
+                <a href="prijava.html">Prijava</a>
+            </li>
+            <li>
+                <a href="registracija.html">Registracija</a>
+            </li>
+        </ul>
+    </nav>
+        <nav id="meni1" style="margin-right: 5%;">
+        <ul>  
+            <li>
+                <a href="korisnici_jquery.html">Korisnici <br /> jquery</a>
+            </li>
+            <li>
+                <a href="gen_korisnici_jquery.html">Generiranje <br /> korisnika</a>
+            </li>            
+            <li>
+                <a href="registracija_jquery.html">Registracija <br /> jquery</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="sadrzaj">
+        <article>
+            <form action="http://arka.foi.hr/WebDiP/2013/zadaca_01/ispis_forme.php" method="POST">
+                <p class="naslov">Prijava</p>
+                <label onmouseout="misdole(this);" onmouseover="misgore(this);" for="korisnickoImee">Korisničko ime</label>
+                <input class="input1" autofocus type="text" id="korisnickoImee" required="" onfocus="fokusirann(this)" onBlur="odznacii(this);" /><br/>
+                <label onmouseout="misdole(this);" onmouseover="misgore(this);" for="lozinkaa">Lozinka</label>
+                <input class="input1" type="password" id="lozinkaa" required="" onfocus="fokusirann(this)" onBlur="odznacii(this);" /><br/>
+                <label onmouseout="misdole(this);" onmouseover="misgore(this);" class="zapamti" for="zapamti">Zapampti moju prijavu</label>
+                <input  class="check" type="checkbox" id="zapamti">
+                <input type="submit" value="Prijavi se" class="gumb"/><br/> 
+                <p>Registriraj se <a href="registracija.html">ovdje</a></p>
+            </form>
+        </article>
+    </section>
+    <footer id="footer">
+        <a href="http://validator.w3.org/check?uri=http://arka.foi.hr/WebDiP/2013/zadaca_03/nzvorc/prijava.html"><img src="img/html-5.png" height="100" alt="valid_html" /></a>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://arka.foi.hr/WebDiP/2013/zadaca_03/nzvorc/prijava.html"><img src="img/css.png" height="100" alt="valid_css" /></a><br />
+        Vrijeme potrebno za riješavanje <b>aktivnog dokumenta / zadaće: 1h / 10h</b>
+       <br/>
+    </footer>
+    <script src="js/nzvorc.js"></script> 
+    </body>
+</html>

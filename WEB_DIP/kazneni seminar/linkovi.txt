@@ -1,0 +1,15 @@
+definicija keyframes -> https://www.thoughtco.com/key-frame-meaning-140866
+definicija animacije -> https://bs.wikipedia.org/wiki/Animacija
+w3 -> https://www.w3schools.com/css/css3_animations.asp
+primjeri -> https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+	 -> https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+	 -> https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+ 	 -> http://lea.verou.me/2012/12/animations-with-one-keyframe/
+	 -> http://webdesignerwall.com/tutorials/easy-css-animation-using-keyframes
+
+
+
+literatura:
+https://robots.thoughtbot.com/css-animation-for-beginners
+http://www.oxfordwebstudio.com/sta-je-animacija.html
+http://www.grafx.ba/index.php/teme/multimedija/97-animaciju-poznajemo-svi-jos-od-djetinstva-kada-smo-gledali-crtane-filmove-koji-su-bili-prvi-oblik-animacije-emitovani-na-medijima-nekad-nekoliko-papira-na-kojima-smo-crtali-svaki-pokret-i-listajuci-te-papire-pravili-smo-animaciju-koja-je-u-sustini-skup-sl

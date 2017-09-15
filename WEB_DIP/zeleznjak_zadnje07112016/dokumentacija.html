@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Projekt- knjiznica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maja Zeleznjak">
+    <meta name="keywords" content="FOI, WebDiP">
+    <link rel="stylesheet" type="text/css" href="css/mzeleznj2.css"/>
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
+</head>
+<body>
+<section>
+    <header>
+        <h1 class="naslov"> Projekt - Knjiznica </h1>
+        <div class="prijava">
+        </div>
+    </header>
+</section>
+
+<nav id="meni">
+<ul>
+<li><a href="index.php">Početna </a></li>
+
+           
+            
+			<li><a href="o_autoru.html">O autoru</a></li>
+			<!--
+			<li><a href="clanovi.php">Ispis korisnika</a></li>
+			<li><a href="login.php">Prijava</a></li>
+			<li><a href="clan.php?reg=1">Registracija</a></li>
+			-->
+</ul>
+</nav>
+<section id="sadrzaj">
+<h2 style="margin-left: 10px;">Opis projektnog zadatka :</h2>
+<p style="margin-left: 10px;">Bilo je potrebno napraviti sustav koji korisnicima omogućuje uvid u stanje knjižnica te posudbu knjiga od knjižnica, ali i od drugih korisnika. Sustav bi trebao imati 4 uloge. Neregistrirani korisnik, registrirani korisnik tj. član,  moderator ili knjižničar i administrator.  Glavne funkcionalnosti koje bi sustav trebao imati su registracija korisnika, prijava te odjava sa sustava, posudba knjige os strane knjižnice ali i od drugih korisnika, dodavanje knjiga u sustav od strane moderatora ili administratora, dodavanje knjižnica u sustav te evidencija korištenja aplikacije kojom se koristi samo administrator. Koristiti različite tehnologije u izradi sustava.</p>
+
+<h2 style="margin-left: 10px;">Opis projektnog rješenja :</h2>
+<p style="margin-left: 10px;">Napravljen je sustav koju korisnicima služi za posudbu knjiga preko aplikacije, a moderatorima i administratorima dodavanje knjiga i knjižnica u isti taj sustav. Sustav ima sve 4 uloge: neregistrirani korisnik, registrirani korisnik ili član, moderator ili knjižničar i administrator.
+<br>Prijava na sustav vrši se preko AJAX tehnologije. U slučaju pogrešne prijave, korisniku se ispisuje greška.
+<p style="margin-left: 10px;"><img src="./img/prijava.JPG" width="555px" height="270px">
+<br>Kad se korisnik prijavi, dobiva popis knjižnica gdje može odabrati neku. Odabirom, dobiva popis knjiga iz te knjižnice.
+<p style="margin-left: 10px;"><img src="./img/odabir_knjiznice.jpg" width="700px" height="279px">
+<br>Korisnik ima mogućnost pretvorbe podataka iz tablice u PDF.
+<p style="margin-left: 10px;"><img src="./img/pretvoripdf.jpg" width="700px" height="379px">
+<br>Pretraga podataka vrši se također preko AJAX tehnologije. Dakle, korisnik dok pođe upisivati pojam, podaci se automatski ažuriraju kroz tablicu. Također, prilagođava se i brojanje po stranicama kad se vrši pretraga. </p>
+<p style="margin-left: 10px;"><img src="./img/pretraga.JPG" width="700px" height="319px"></p>
+</p>
+<br>
+
+<h2 style="margin-left: 10px;">Zadovoljene su sve funkcionalnosti poput:</h2>
+<ul>
+<li class="nabroji">Za neregistriranog korisnika: registracija na sustav, aktivacija sustava e-mailom sa 24 satnom aktivacijom</li>
+<li class="nabroji">Za registriranog korisnika: uspješna prijava te odjava sa sustava, omogućeno posuđivanje knjiga, pregled knjiga po knjižnicama, login sa Ajax-om</li>
+<li class="nabroji">Za moderatora: unos vlastitih elemenata, potvrda ili odbitak rezervacije, pregled svih knjiga za njegovu knjižnicu te pregled aplikativne statistike</li>
+<li class="nabroji">Za administratora: Otključavanje i blokiranje korisničkog računa, konfiguracija sustava, pregled i pretraživanje dnevnika, dodavanje, pregled i izmjena podataka u tablicama, kreiranje i dodjela moderatora</li>
+<ul>
+
+<h2 style="margin-left: 10px;">ERA model:</h2>
+<p style="margin-left: 10px;"><img src="./img/era_model.png" width="640px" height="480px"></p>
+
+<h2 style="margin-left: 10px;">Popis skripti:</h2>
+<table border="1" >
+<tr>
+<th>Skripta</th><th>Opis</th>
+</tr>
+<tr><td>admin.php</td><td>Skripta za konfiguraciju sustava administratora</td></tr>
+<tr><td>aktivacija.php</td><td>Skirpta koja aktivira korisnika</td></tr>
+<tr><td>baza_class.php</td><td>Skripta za bazu</td></tr>
+<tr><td>clan.php</td><td>Skripta za registraciju novog člana</td></tr>
+<tr><td>clanovi.php</td><td>Skripta koja ispisuje sve članove</td></tr>
+<tr><td>dnevnik.php</td><td>Skirpta za prikaz aktivnosti iz dnevnika</td></tr>
+<tr><td>index.php</td><td>Glavna stranica</td></tr>
+<tr><td>kategorija.php</td><td>Skripta za administraciju kategorija</td></tr>
+<tr><td>kategorije.php</td><td>Skripta za ispis kategorija</td></tr>
+<tr><td>knjiga.php</td><td>Skripta za administraciju knjiga</td></tr>
+<tr><td>knjige.php</td><td>Skripta za ispis knjiga</td></tr>
+<tr><td>knjigetop10.php</td><td>Skripta za ispis top 10 knjiga</td></tr>
+<tr><td>knjiznica.php</td><td>Skripta za administraciju knjižnica</td></tr>
+<tr><td>knjiznice.php</td><td>Skripta za ispis knjižnica</td></tr>
+<tr><td>login.php</td><td>Skripta za login formu</td></tr>
+<tr><td>logiraj.php</td><td>Skripta za prijavu</td></tr>
+<tr><td>lokacija.php</td><td>Skripta za odabir lokacije</td></tr>
+<tr><td>OdaberiKnjiznicu.php</td><td>Skripta za odabir popisa knjižnica</td></tr>
+<tr><td>odjava.php</td><td>Skripta za odjavu sa sustava</td></tr>
+<tr><td>podnozje.php</td><td>Skripta za opis podnožja stranice</td></tr>
+<tr><td>posudbe.php</td><td>Skripta za ispis posudbi</td></tr>
+<tr><td>posudrez.php</td><td>Skripta za ispis posudbi i rezervacija</td></tr>
+<tr><td>rezervacije.php</td><td>Skripta za ispis  rezervacija</td></tr>
+<tr><td>session.php</td><td>Skripta za provjeru sessiona</td></tr>
+<tr><td>statistikalike.php</td><td>Skripta za statistiku like knjiga</td></tr>
+<tr><td>statistikalikekateg.php</td><td>Skripta za statistiku like kategorija</td></tr>
+<tr><td>statknjige.php</td><td>Skripta za statistiku knjiga</td></tr>
+<tr><td>VratiClanove.php</td><td>Skripta za povrat članova (za AJAX pretragu)</td></tr>
+<tr><td>VratiKategorije.php</td><td>Skripta za povrat kategorija (za AJAX pretragu)</td></tr>
+<tr><td>VratiKnjige.php</td><td>Skripta za povrat knjiga (za AJAX pretragu)</td></tr>
+<tr><td>VratiKnjiznice.php</td><td>Skripta za povrat knjižnica (za AJAX pretragu)</td></tr>
+<tr><td>VratiPodatkeDnevnika.php</td><td>Skripta za podatke dnevnika (za AJAX pretragu)</td></tr>
+<tr><td>VratiStatistike.php</td><td>Skripta za povrat statistika (za AJAX pretragu)</td></tr>
+<tr><td>zaglavlje.php</td><td>Skripta za zaglavlje</td></tr>
+
+</table>
+
+<h2 style="margin-left: 10px;"> Mapa mjesta: </h2>
+                 <ul>
+                     <li>WebDiP2015_092</li>
+                     
+                        <ul>
+                           <li>css</li>
+                           <li>fpdf</li>
+                           <li>img</li>						   
+                           <li>js</li>
+						   <li>knjige</li>
+                           <li>knjiznice</li>
+						   <li>korisnici</li>
+						   <li>Recaptcha</li>
+						   
+                          </ul>
+
+<h2 style="margin-left: 10px;">Navigacijski dijagram:</h2>
+<p style="margin-left: 10px;"><img src="./img/navigacijski_dijagram.png" width="640px" height="480px"></p>
+
+</section>
+
+
+<footer id="footer">
+    <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2015/zadaca_01/mzeleznj2/"><img
+            src="./img/HTML5.png" height="50" width="50" alt="valid_html"/></a>
+    <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2015/zadaca_01/mzeleznj2"><img
+            src="./img/CSS3.png" height="50" width="50" alt="valid_css"/> </a>
+    <p>&copy; 2016 M.Zeleznjak</p>
+</footer>
+</body>
+</html>

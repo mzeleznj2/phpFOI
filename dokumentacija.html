@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="author" content= "Maja Zeleznjak">
+        <meta name="kljucne rijeci" content= "FOI, WebDiP">
+        <meta name="datum izrade" content="8.3.2017.">
+        <meta name="naslov" content="Zadaća 1">
+        <link type="text/css" rel="stylesheet" href="css/mzeleznj2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+
+        <header> 
+            <figure>
+                <figcaption > Dokumentacija </figcaption>  
+                <img id="naslovna" src="slike/logo.png" width="300" height="100" usemap="#mapa1" alt="logo">
+                <map name="mapa1">
+                    <area href="index.php"
+                          alt="pravokutnik" 
+                          shape="rect" 
+                          coords="0,0,150,100" 
+                          target="a" /> 
+                    <area href="#footer" 
+                          alt="pravokutnik" 
+                          shape="rect" 
+                          coords="150,0,300,100" 
+                          />  
+                </map>
+            </figure>
+        </header>
+
+        <nav id="meni" class="no-print">
+            <ul>
+                <li><a href="index.php"> Početna</a></li><li> <a href="https://barka.foi.hr/WebDiP/2016_projekti/WebDiP2016x130/prijava.php"> Prijava</a></li><li><a href="registracija.php"> Registracija</a></li><li><a href="programi_gost.php"> Programi</a></li><li><a href="dokumentacija.html"> Dokumentacija</a></li><li><a href="o_autoru.html"> O autoru</a></li>
+            </ul>
+        </nav>
+
+        <div id="sadrzaj">
+
+            <h2> Opis projektnog zadatka</h2>       
+            <p> Moj projektni zadatak bio je napraviti web aplikaciju za teretanu. Taj sustav omogućuje prijavu na programe
+                za trening i praćenje evidencije dolazaka i napredovanja. Postoje 4 uloge: Neregistrirani, registrairani korisnik,
+                moderator i administrator. Glavne funkcionalnsti koje bi sustav trebao imati u registracija korisnika, prijava te
+                odjava sa sustava, prijavljivanje na vrste programa, kreiranje istih, vođenje evidencije dolazaka, unošenje
+                u sustav novih kupona, dodavanje kupna u košaricu, dijeljenje sadržaja na društvenim mrežama i drugo...Koristiti
+                različite tehnologije u izradi sustava.
+            </p><br> <br>
+
+            <h2> Opis projektnog rješenja </h2>
+            <p> Napravljen je sustav koji korisnicima služi za prijavu na različite programe vjebanja, a moderatorima i administratorima 
+                kreiranje novih programa u taj isti sustav. Sustav ima 4 uloge: neregistrirani korisnik, registrairani korisnik ili polaznik, 
+                moderator ili trener i administrator. </p>
+            <p> Kad se korisnik prijavi, može pregledavati programe i vidi broj slobodnih mjesta, te se može na ista i prijaviti.</p>
+            <p> Korisnik također vidi i stranicu sa informacijom o broju skupljenih bodova koje dobiva za korištenje određenih dijelova
+                web aplikacije. Ukoliko ima dovoljno bodova može kupovati kupone.
+            <p> Pretraga podataka vrši se preko AJAX tehnologije. Kad korisnik upisuje pojam, podaci se automatski ažuriraju kroz tablicu.
+                Također, prilagođava se i brojanje po stranicama kad se vrši pretraga. </p> <br> <br>
+
+            <h2> ERA model </h2>
+            <img src="./slike/era.png" width="640px" height="480px"> <br> <br>
+
+            <h2>Popis skripti: </h2>
+
+            <table border="1">
+                <tr>
+                    <th> Skripta </th> <th>Opis </th>                   
+                </tr>
+                <tr><td>bodovi.php</td><td> Skripta za skupljanje bodova</td></tr>
+                <tr><td>programi_prijava.php</td><td>Skripta za prijavu programa</td></tr>
+                <tr><td>prijava.php</td><td>Skripta login formu</td></tr>    
+                <tr><td>registracija.php</td><td>Skripta za registriranje korisnika</td></tr> 
+                <tr><td>ajax_korisnik.php</td><td>Skripta za dohvaćanje korisnika iz baze</td></tr> 
+                <tr><td>aktivacija.php</td><td>Skripta aktiviranje korisnika nakon registracije</td></tr> 
+                <tr><td>include_baza.class.php</td><td>Skripta za bazu</td></tr> 
+                <tr><td>dnevnik.php</td><td>Skirpta za prikaz aktivnosti iz dnevnika</td></tr> 
+                <tr><td>include_meni.php</td><td>Skripta za prikaz menija</td></tr>  
+                <tr><td>include_smarty.php</td><td>Skripta za ukljucivanje smarty-ja u projekt</td></tr>
+                <tr><td>kuponi.php</td><td>Skripta za prikaz kupona</td></tr>
+                <tr><td>o_autoru.html</td><td>Skripta za informacije o autoru</td></tr>
+                <tr><td>index.php</td><td>Skripta za početnu stranicu</td></tr> 
+                <tr><td>odjava.php</td><td>Skripta za odjavu sa sustava</td></tr>
+                <tr><td>prijava.php</td><td>Skripta login formu</td></tr> 
+                <tr><td>otkljucavanje_korisnika.php</td><td>Skripta za otkljucavanje korisnika</td></tr> 
+                <tr><td>prihvaca_kolacic.php</td><td>Skripta za prihavacanje kolacica</td></tr> 
+                <tr><td>prijava_drugi_korak.php</td><td>Skripta za prijavu sa dva koraka</td></tr>
+                <tr><td>program_vjezbanja</td><td>Skripta za prikaz programa vježbanja</td></tr>
+                <tr><td>programi.php</td><td>Skripta za definiranje programa</td></tr>
+                <tr><td>programi_gost.php</td><td>Skripta za prikaz programa za neregistriranog korisnika</td></tr>
+                <tr><td>promjena_lozinke.php</td><td>Skripta za promjenu passworda</td></tr>    
+                
+            </table> <br> <br>
+
+
+            <h2> Mapa mjesta </h2>
+
+            <ul>
+                <li>WebDiP2016x130</li>
+
+                <ul>
+                    <li>css</li>                   
+                    <li>slike</li>						   
+                    <li>js</li>                 
+                    <li>recaptcha</li>
+                    <li>privatno</li>
+
+                </ul> <br> <br>
+                
+            <h2>Navigacijski dijagram </h2>
+            
+            <img src="./slike/Navigacijski.png" width="640px" height="480px"> <br> <br>
+  
+
+        </div>
+
+        <footer id="footer">          
+            <p>&copy; 2016 M.Zeleznjak</p>
+            <figure id="css3">
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_01%2Fmzeleznj2%2Fpopis_proizvoda.html">
+                    <img src="slike/CSS3.png" alt="Maja" width="60" height="60"> </a>
+                <figcaption>CSS3</figcaption>
+            </figure>
+            <figure id="html5">
+                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_01%2Fmzeleznj2%2Fprijava.html">
+                    <img src="slike/HTML5.png" alt="Maja" width="60" height="60"> </a>
+                <figcaption>HTML5</figcaption>
+            </figure>
+        </footer>
+    </body>
+</html>

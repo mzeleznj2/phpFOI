@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigacijski Dijagram</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Početna stranica">
+        <meta name="autor" content="Krešimir Zelenika">
+        <meta name="kljucne rijeci" content="Početna stranica, autor">
+        <meta name="datum" content="3.9.2017">
+        <link rel="stylesheet" type="text/css" href="kzelenik.css">
+    </head>
+    <body id="b">
+        <header>
+            <h3 class="marquee"><span style="color: white; padding-top: 5px;">Dobrodošli na stranicu Navigacijskog dijagrama!</span></h3>
+            <img src="slike/logo.png" alt="logo" usemap="#logomap" style=" width:auto; height:auto; box-shadow: 0px 0px 0px;">
+            <map name="logomap">
+                <area shape="rect" coords="0,0,110,100" href="index.html" alt= "Početna stranica" target ="_blank">
+                <area shape="rect" coords="110,0,370,100" href="index.html#autor" alt = "O autoru">
+            </map>
+        </header><br>
+        <nav id="navi">
+            <div>
+                <button onclick="location.href ='index.html'">Početna</button><br>
+                <button onclick="location.href ='proizvod.html'">Opis proizvoda</button><br>
+                <button onclick="location.href ='registracija.html'">Registracija</button><br>
+                <button onclick="location.href ='prijava.html'">Prijava</button><br>
+                <button onclick="location.href ='novi_proizvod.html'">Dodavanje proizvoda</button><br>
+                <button onclick="location.href ='popis_proizvoda.html'">Popis proizvoda</button><br>
+				<button onclick="location.href ='era.html'">Era dijagram</button><br>
+				<button onclick="location.href ='navigacijski.html'">Navigacijski dijagram</button>
+            </div>
+        </nav>
+        <br>
+        <section id="sadrzajI">
+            <h3><b>NAVIGACIJSKI DIJAGRAM:</b></h3>
+            <div id="slike">
+                <article>
+                    <div>
+                    <figure style="float:left;">
+                        <a href="slike/navigacijski.png" target="_blank">Navigacijski dijagram<br><img src="slike/navigacijski.png " alt="Navigacijski" style="height: 200px; width: 200px;"> </a>
+                        <figcaption></figcaption>
+                    </figure>
+                    </div>
+                </article>
+			</div>
+        </section><br>
+
+        <footer id="foot">
+                <p> Vrijeme potrebno za rješavanje aktivnog dokumenta: 1 sat.</p>
+                <address>
+                    <b>Kontakt:</b><a href="mailto:kzelenik@foi.hr">Krešimir Zelenika</a>
+                </address>
+                <p><small>&copy;</small>2017. K. Zelenika</p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fnavigacijski.html">
+					<img src="slike/HTML5.png" alt="HTML validator" style=" width: 100px;">
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fkzelenik.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img src="slike/CSS3.png" alt="CSS validator" style=" width: 100px;">
+				</a>
+		</footer>
+    </body>
+</html>

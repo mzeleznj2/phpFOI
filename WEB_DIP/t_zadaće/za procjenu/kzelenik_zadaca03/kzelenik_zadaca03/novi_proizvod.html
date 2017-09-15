@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dodavanje proizvoda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Dodavanje proizvoda">
+		<meta name="autor" content="Krešimir Zelenika">
+		<meta name="kljucne rijeci" content="Dodavanje proizvoda, novi proizvod">
+		<meta name="datum" content="3.9.2017">
+		<link rel="stylesheet" type="text/css" href="css/kzelenik.css">
+		<script type="text/javascript" src="js/kzelenik.js"></script>
+		<style>
+			label
+			{
+				float: left;
+				margin-left: 40px;
+			}
+
+			input
+			{
+				float: right;
+				width: 300px;
+				margin-right: 100px;
+			}
+			input[type=submit]
+			{
+				background-color: LightSlateGray;
+				color: white;
+				border-width: 0px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+			
+			input[type=reset]
+			{
+				background-color: LightSlateGray;
+				color: white;
+				border-width: 0px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+			
+			header
+			{
+				padding-top: 2px;
+			}
+			
+			@media screen and (max-width:1450px) and (orientation: landscape)
+			{
+				input
+				{
+					margin-right: 25px;
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+				textarea
+				{
+					margin-right: 25px;
+					float: right;
+				}
+				span
+				{
+					float: left;
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+				select
+				{
+					margin-right: 25px;
+					float: right;
+				}
+				footer
+				{
+					margin-top: 200px;
+				}
+				label 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+			}
+			@media screen and (min-width:1450px) and (orientation: landscape)
+			{
+				input
+				{
+					margin-right: 150px;
+					font-family: Helvetica;
+					font-size: 12px
+				}
+				span
+				{
+					float: left;
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+				textarea
+				{
+					margin-right: 150px;
+					float: right;
+				}
+				select
+				{
+					margin-right: 150px;
+					float: right;
+				}
+				footer
+				{
+					margin-top: 200px;
+				}
+				label 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+			}
+			@media screen and (max-width:1024px) and (orientation: landscape)
+			{
+				input
+				{
+					float: left;
+					margin-left: 40px;
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+				span
+				{
+					float: left;
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+				textarea
+				{
+					margin-left: 40px;
+					float: left;
+				}
+				select
+				{
+					margin-left: 40px;
+					float: left;
+				}
+				section
+				{
+					height: 550px;
+				}
+				label 
+				{
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+			}
+			@media screen and (max-width:750px) and (orientation:landscape) 
+			{
+				form
+				{
+					float: left;
+				}
+				label
+				{
+					padding-top: 5px;
+				}
+			}
+			@media screen and (max-width:480px) and (orientation: landscape)
+			{
+					label 
+					{
+						font-family: Arial;
+						font-size: 8px;
+					}
+					span
+					{
+						font-family: Arial;
+						font-size: 8px;
+					}
+			}
+			@media screen and (min-width:1024px) and (orientation: portrait)
+			{
+				input 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+					float: left;
+					margin-left: 300px;
+					padding-top: 5px;
+					margin-bottom: 20px;
+				}
+				label 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+					float: center;
+					margin-left: 300px;
+					padding-top: 10px;
+				}
+				form
+				{
+					float: left;
+					height: 10%;
+					width: 10%;
+					margin: auto;
+				}
+				section
+				{
+					height: 800px;
+				}
+				select
+				{
+					margin-left: 300px;
+				}
+				span
+				{
+					ffont-family: Helvetica;
+					font-size: 12px;
+					float: left;
+					margin-left: 300px;
+					padding-top: 5px;
+					margin-bottom: 20px;
+				}
+				textarea
+				{
+					float: left;
+					margin-left: 300px;
+					padding-top: 5px;
+					margin-bottom: 20px;
+				}
+			}
+			@media screen and (max-width:1024px) and (orientation: portrait)
+			{
+				input
+				{
+					font-family: TimesNewRoman;
+					font-size: 10px;
+					float: left;
+					margin-left: 10px;
+					padding-top: 5px;
+					margin-bottom: 5px;
+				}
+				label 
+				{
+					font-family: TimesNewRoman;
+					font-size: 10px;
+					float: left;
+					margin-left: 10px;
+					padding-top: 5px;
+				}
+				form
+				{
+					float: left;
+					margin-left: 20%;
+				}
+				section
+				{
+					height: 550px;
+				}
+				span
+				{
+					float: right;
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+				textarea
+				{
+					margin-left: 10px;
+					float: left;
+				}
+				select
+				{
+					margin-left: 10px;
+					float: left;
+				}
+			}
+			@media screen and (max-width:480px) and (orientation: portrait)
+			{
+				label 
+				{
+					font-family: Arial;
+					font-size: 8px;
+					margin-left: 5px;
+				}
+				input
+				{
+					font-family: Arial;
+					font-size: 8px;
+					margin-bottom: 5px;
+					margin-left: 5px;
+				}
+				form
+				{
+					float: left;
+					margin-left: 5%;
+				}
+				section
+				{
+					height: 550px;
+				}
+				span
+				{
+					float: left;
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+				textarea
+				{
+					margin-left: 5px;
+					float: left;
+				}
+				select
+				{
+					margin-left: 5px;
+					float: left;
+				}
+			}
+			
+		</style>
+
+    </head>
+    <body id="b" onload="kreirajDogadaj(); zakljucaj();">
+        <header>
+            <h3 class="marquee"><span style="color: white; padding-top: 5px;">Dobrodošli na stranicu dodavanja proizvoda!</span></h3>
+            <img src="slike/logo.png" alt="logo" usemap="#logomap" style=" width:auto; height:auto; box-shadow: 0px 0px 0px;">
+			<map name="logomap">
+				<area shape="rect" coords="0,0,110,100" href="index.html" alt= "Početna stranica" target ="_blank">
+				<area shape="rect" coords="110,0,370,100" href="index.html#autor" alt = "O autoru">
+			</map>
+        </header><br>
+        <nav id="navi">
+			<div>
+                <button onclick="location.href ='index.html'">Početna</button><br>
+                <button onclick="location.href ='proizvod.html'">Opis proizvoda</button><br>
+                <button onclick="location.href ='registracija.html'">Registracija</button><br>
+                <button onclick="location.href ='prijava.html'">Prijava</button><br>
+                <button onclick="location.href ='novi_proizvod.html'">Dodavanje proizvoda</button><br>
+                <button onclick="location.href ='popis_proizvoda.html'">Popis proizvoda</button><br>
+				<button onclick="location.href ='era.html'">Era dijagram</button><br>
+				<button onclick="location.href ='navigacijski.html'">Navigacijski dijagram</button>
+			</div>
+        </nav>
+		<br>
+        <section id="sadrzaj">
+            <h2>Stranica za dodavanje proizvoda</h2>
+			<p id = "greske" style= "visibility: hidden">0</p>
+            <div id="dodavanje">
+                <form id="Form1" name="Form1" action="https://barka.foi.hr/WebDiP/2016/materijali/zadace/ispis_forme.php" method="post">
+                    <p>
+					<div>	<label for="nazivp">Naziv proizvoda: </label><label id="naz" style="visibility: hidden;">0</label>
+							<input type="text" name="nazivp" required id="nazivp" maxlength = "15"><br>
+							<label for="opisp">Opis proizvoda: </label><label id="opi" style="visibility: hidden;">0</label><br>
+							<textarea class="input" rows="50" cols="100" name="opisp" id= "opisp" style= "height: 50px; width: 300px;"></textarea><br><br><br>
+							<label for="datump">Datum proizvodnje:</label><label id="dat" style="visibility: hidden;">0</label>
+							<input type="text"  name="datump" id="datump"><br><br>
+							<label for="vrijemep">Vrijeme proizvodnje: </label><label id="vri" style="visibility: hidden;">0</label>
+							<input type="text"  name="vrijemep" id="vrijemep"><br><br>
+							<label for="kolicinap">Količina proizvoda</label><label id="kol" style="visibility: hidden;">0</label>
+							<input type="text" name="kolicinap" id="kolicinap"><br><br>
+							<label for="tezinap">Težina proizvoda: </label><label id="tez" style="visibility: hidden;">0</label><!--<span id="range">0</span>-->
+							<input type="text" max="100" min="0" id="tezinap"><br><br>
+                        <!--
+						onchange="showValue(this.value)"
+							<script type="text/javascript">
+                            function showValue(newValue)
+                            {
+                                document.getElementById("range").innerHTML=newValue;
+                            }
+                        </script>
+						-->
+                        <label for="kategorijap">Kategorija proizvoda:</label><label id="kat" style="visibility: hidden;">0</label>
+                        <select name="kategorijap" id="kategorijap" style="width: 300px;">
+							<option value=""></option>
+                            <option value="Kosa" >Kosa</option>
+                            <option value="Brada" >Brada</option>
+                            <option value="Pribor" >Pribor</option>
+                         </select><br><br>
+						 <label id="reset" style="visibility: hidden;">Resetiraj</label>
+						<input type="submit" name="dodaj" id="dodaj" value="Dodaj proizvod"><br>
+						<input type="reset" id = "resetiraj" value=" Inicijaliziraj "> 
+                        </p>
+                    </form>
+                </div>
+				<button onclick="location.href ='novi_proizvod.html'" id= "ehh" style="visibility: hidden; height: 50px; width: 150px;">Reset</button>
+            </section>
+
+            <footer id="foot">
+                <p> Vrijeme potrebno za rješavanje aktivnog dokumenta: 4 sata.</p>
+                <address>
+                    <b>Kontakt:</b><a href="mailto:kzelenik@foi.hr">Krešimir Zelenika</a>
+                </address>
+                <p><small>&copy;</small>2017. K. Zelenika</p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fnovi_proizvod.html">
+					<img src="slike/HTML5.png" alt="HTML validator" style=" width: 100px;">
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fkzelenik.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img src="slike/CSS3.png" alt="CSS validator" style=" width: 100px;">
+				</a>
+			</footer>
+        </body>
+    </html>

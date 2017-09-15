@@ -1,0 +1,11 @@
+p { 
+    color: #ff0000;
+}
+div { 
+    background-color: #808080;
+    width: 800px;
+    height: 400px;
+}
+div p { 
+    color: #000000;
+}

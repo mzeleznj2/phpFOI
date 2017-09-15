@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FOI - Web dizajn i programiranje : HTML - Primjer broj 04_6</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <p>Prvi primjer je ugrađeni element canvas.</p> 
+        <canvas id="platno" width="600" height="400">
+        </canvas>
+        <script type="text/javascript">
+            var platno = document.getElementById("platno");
+            var ctx = platno.getContext("2d");
+            ctx.fillStyle = "rgb(0, 0, 0)";
+            ctx.strokeRect(40, 0, 320, 400);
+            for (var i = 0; i < 7; i++) {
+                var d = Math.round(Math.random() * 400);
+                var c = Math.round(Math.random() * 255);
+                var z = Math.round(Math.random() * 255);
+                var p = Math.round(Math.random() * 255);
+                var boja = "rgb(" + c + "," + z + "," + p + ")";
+                ctx.fillStyle = boja;
+                ctx.fillRect(100 + 40 * (i - 1), 400 - d, 38, 400);
+            }
+        </script>
+        <hr> 
+    </body>
+</html>

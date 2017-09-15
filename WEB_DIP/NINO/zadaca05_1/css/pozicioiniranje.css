@@ -1,0 +1,64 @@
+@media only screen and (min-width : 731px) {
+#meni{
+    width:300px;
+    float:left;
+    padding: 5px 5px;
+    display: inline-block;
+}
+
+#sadrzaj{
+    float:left;
+    width:50%;
+    padding: 5px 5px;
+    margin-left: 10px;
+}
+}
+
+@media only screen and (max-width : 730px) {
+#meni{
+    width:30%;
+    float:left;
+    padding: 5px 5px;
+    display: inline-block;
+}
+#sadrzaj{
+    float:left;
+    width:60%;
+    padding: 5px 5px;
+    margin-left: 10px;
+}
+}
+
+label {
+ clear: both;
+ float: left;
+ text-align: left;
+ width: 30%;
+}
+
+input {
+ float: left;
+ width: 70%;
+}
+
+select {
+ float: left;
+ width: 70%;
+}
+
+textArea {
+ float: left;
+ width: 70%;
+}
+
+.gumb {
+    clear: both;
+    float: right;
+    width: 50%;
+    padding: 5px 15px; 
+    background: #ccc; 
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

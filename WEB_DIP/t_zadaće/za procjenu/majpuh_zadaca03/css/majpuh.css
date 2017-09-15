@@ -1,0 +1,227 @@
+
+@media screen and (max-width: 480px){ 
+    body {
+        font-size: 8px;	
+        font-family: "Arial";	
+    }
+    #maja {
+        display: none;   
+    }
+    .opis, .datum, .vrijeme {
+        display: none;
+    }
+} 
+
+@media screen and (min-width: 480px)and (max-width: 1024px){ 
+    body {
+        font-size: 11px;	
+        font-family: "Calibri";	
+    }
+    #omiljeni_pr {
+        clear: both;
+    }
+
+} 
+
+@media screen and (min-width: 1024px){ 
+    body {
+        font-size: 14px;	
+        font-family: "Helvetica";	
+    }
+    #omiljeni_pr {
+        height: 420px;
+        position: relative; 
+        left: 10%;
+    }
+    #om1 {
+        position: absolute;
+    }
+    #om2 {
+        position: absolute;
+        margin-left: 15px; 
+        margin-top: 15px;
+    }
+
+    #om3 {
+        position: absolute;
+        margin-left: 30px; 
+        margin-top: 30px;
+    }
+  /*  .omiljeni_slike:hover {
+        z-index: 2;
+    } */
+    #omiljeni_pr > figure > figcaption {
+        display: none;
+    }
+    #maja {
+        position: relative;
+        left: 10%;
+        
+    }
+}
+
+header > figure> figcaption {
+    display: none;
+}
+
+.logo > figure > figcaption {
+    display: none;
+}
+
+#maja > figure > figcaption {
+    display: none;
+}
+
+.artikli_slike {
+    width: 30%;
+    box-shadow: 5px 5px 2px #DCDCDC;  
+
+}
+
+#registracija, #prijava, #novi_proizvod {
+    margin: 5px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+
+#registracija {
+    position: relative;
+    left: 0%;
+    width: 400px;
+}
+
+#prijava {
+    width: 300px;
+}
+
+#novi_proizvod {
+    width: 800px;
+}
+
+#korImeL, #lozinkaL, #zapamtiMeL {
+    font-style: italic;
+    position: absolute;
+}
+
+#korIme, #lozinka, #zapamtiMe, #posalji {
+    margin-left: 100px;
+}
+
+table, td, th { 
+    border: 2px solid #778899;
+}
+
+.break {
+    clear: both;
+}
+
+.banner {
+    background-color: #7A0000;
+    width: 100%;
+    height: 30%;
+    color: white;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+.logo {
+    position: relative;
+    float: left;
+}
+.he {
+    position: relative;
+    float: right;
+    padding: 50px 10px 0 0;
+}
+.topmenu {
+    position: relative;
+    left: 0%;
+    background-color: #7A0600;
+}
+.topmenu ul {
+    background-color: #3E0B0E;
+    margin: 0;
+    padding: 4px 0 0 5px ;
+    height: 20px;
+    font-weight: bold;
+
+}
+.topmenu li {
+    list-style: none;
+    font-size: 0.9em;
+    border-right: 1px solid #7A0000;
+    padding: 0 6px 0 6px;
+    float: left;
+}
+
+.fo {
+    width: 350px;
+    opacity: 0.75;
+    padding: 3px 3px 2px 10px;
+    margin: auto;
+    box-shadow: 5px 5px 2px #DCDCDC;  
+}
+.slika_fo1 {
+    float: left;
+}
+.slika_fo2 {
+    position: relative;
+    float: left;
+}
+
+.proizvodi_ur {
+    
+    width: 80%;
+    box-shadow: 5px 5px 2px #DCDCDC; 
+    padding: 4px 10px 5px 10px ;
+    margin: auto;
+}
+
+#lista_om {
+    width: 40%;
+    box-shadow: 5px 5px 2px #DCDCDC; 
+    padding: 5px 10px 5px 20px ;
+    position: relative;
+    float: left;
+    left: 5%;
+}
+#lista_om dt {
+    font-weight: bold;
+}
+#lista_om dd {
+    font-style: italic;
+}
+
+#oMeni {
+    width: 400px;
+    padding: 3px 3px 2px 10px;
+    box-shadow: 5px 5px 2px #DCDCDC; 
+}
+#oMeni_podaci {
+    float: left;
+}
+#oMeni_podaci li {
+    list-style: none;
+}
+
+.usklicnik {
+    display: none;
+}
+
+.usklicnikIma {
+    color: red;
+    display: inline;
+}
+
+#osvjezi {
+    display: none;
+}
+
+.imaGresku {
+    background: red;
+}
+
+.nemaGresku {
+    background: white;
+}

@@ -1,0 +1,149 @@
+body { 
+	background: #808080; 
+	color: #000000; 
+	font-family: "courier"; 
+	margin: 0;
+}
+h1 { 
+	color: #7a6caa;
+}
+
+h2 {
+	color: #13063e;
+}
+
+p { 
+	font-style: italic; 
+	background: #a0a000; 
+}
+
+header{
+    background-color: #3c2b75;
+    text-align: center;
+}
+
+nav {
+	width: 20%;
+	float: left;
+}
+
+section {
+	width: 70%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+footer {
+	clear: both;
+}
+
+#indeks_html figure{
+	border-style: dotted;
+	padding: 20px;
+	width: 100px;
+	border-radius: 20px;
+}
+
+#indeks_html figcaption{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: yellow;
+}
+
+#omilj section ul{
+	list-style-type: upper-roman;
+}
+
+
+#omilj section ul a:visited {
+	color: green;
+}
+
+#omilj section ul a:link {
+	color: #7FFF00;
+}
+
+#omilj section ul a:hover {
+	color: yellow;
+}
+
+#omilj #aso_lista dd{
+	font-size: 13px;
+	font-style: italic;
+	color: #fafc3d;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+form {
+	font-size: 13px;
+	font-family: "Times New Roman", Times, serif;
+	color: #7a6cad;
+	background-color: #202020;
+	border-left: dotted 5px;
+	border-right: dotted 5px;
+	border-top: dotted 5px;
+}
+
+.lab {
+	font-size: 14px;
+	font-family: "Times New Roman", Times, serif;
+	color: #7a6caa;
+}
+
+.inp {
+	background-color: #7a6cab;
+}
+
+#regForm {
+	position: relative;
+	left: 5px;
+}
+
+label {
+	font-size: 15px;
+	font-family: "Times New Roman", Times, serif;
+	color: #7a6caa;
+}
+
+input {
+	background-color: #7a6caa;
+}
+
+#priForm {
+	position: absolute;
+	right: 10px;
+}
+
+#priSec {
+	height: 500px;
+	position: relative;
+}
+
+#kori table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+
+}
+#kori th, td {
+	padding: 5px;
+	text-align: left;
+}
+#kori section {
+	overflow: auto;
+	height: 500px;
+}
+
+#slika {
+	background-color: inherit;
+}
+
+td:hover {
+	background-color: #7a6caa;
+}
+
+.jqFouks {
+	border-style: solid;
+    border-color: yellow;
+}
+
+

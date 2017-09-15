@@ -1,0 +1,12 @@
+https://www.coursera.org/learn/duke-programming-web/lecture/1GC1P/using-html5-canvas
+https://www.coursera.org/learn/javascript
+
+putanja:
+/var/www/WebDiP/2016_projekti/WebDiP2016x130
+http://barka.foi.hr/WebDiP/2016_projekti/WebDiP2016x130/prijava.php
+
+
+Student/ica: Železnjak Maja Email: mzeleznj2@foi.hr
+Direktorij na raèunalu barka.foi.hr: /var/www/WebDiP/2016_projekti/WebDiP2016x130 Korisnièko ime: mzeleznj2
+MySQL baza podataka: WebDiP2016x130 Korisnièko ime: WebDiP2016x130 Lozinka: admin_Nmib
+

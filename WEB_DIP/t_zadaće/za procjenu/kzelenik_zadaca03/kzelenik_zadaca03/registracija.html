@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registracija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name ="Krešimir Zelenika" content="Stranica opisa proizvoda">
+		<link rel="stylesheet" type="text/css" href="css/kzelenik.css">
+		<style>
+			label
+			{
+				float: left;
+				margin-left: 40px;
+			}
+			
+			input
+			{
+				float: right;
+				width: 300px;
+				margin-right: 100px;
+			}
+			input[type=submit] 
+			{
+				background-color: LightSlateGray;
+				color: white;
+				border-width: 0px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+			form
+			{
+				position: relative;
+				float: left;
+			}
+			
+			
+			@media screen and (max-width:1450px) and (orientation: landscape)
+			{
+				input
+				{
+					margin-right: 25px;
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+				footer
+				{
+					margin-top: 200px;
+				}
+				label 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+				section
+				{
+					height: 200px;
+				}
+			}
+			@media screen and (min-width:1450px) and (orientation: landscape)
+			{
+				input
+				{
+					margin-right: 150px;
+					font-family: Helvetica;
+					font-size: 12px
+				}
+				label 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+				}
+				footer
+				{
+					margin-top: 200px;
+				}
+				section
+				{
+					height: 200px;
+				}
+			}
+			@media screen and (max-width:1024px) and (orientation: landscape)
+			{
+				label 
+				{
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+				input
+				{
+					float: left;
+					margin-left: 40px;
+					font-family: TimesNewRoman;
+					font-size: 10px;
+				}
+				section
+				{
+					height: 300px;
+				}
+			}
+			@media screen and (max-width:480px) and (orientation: landscape)
+			{
+				label 
+				{
+					font-family: Arial;
+					font-size: 8px;
+				}
+			}
+			@media screen and (min-width:1024px) and (orientation: portrait)
+			{
+				input 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+					float: left;
+					margin-left: 100px;
+					padding-top: 5px;
+					margin-bottom: 20px;
+				}
+				label 
+				{
+					font-family: Helvetica;
+					font-size: 12px;
+					float: center;
+					margin-left: 20px;
+					padding-top: 10px;
+				}
+				form
+				{
+					position: relative;
+					float: left;
+					height: 10%;
+					width: 10%;
+					margin: 15px;
+				}
+				section
+				{
+					height: 200px;
+				}
+			}
+			@media screen and (max-width:1024px) and (orientation: portrait)
+			{
+				input
+				{
+					font-family: TimesNewRoman;
+					font-size: 10px;
+					float: left;
+					margin-left: 10px;
+					padding-top: 5px;
+					margin-bottom: 5px;
+				}
+				label 
+				{
+					font-family: TimesNewRoman;
+					font-size: 10px;
+					float: left;
+					margin-left: 10px;
+					padding-top: 5px;
+				}
+				form
+				{
+					position: relative;
+					float: left;
+					margin-left: 15px;;
+				}
+				section
+				{
+					height: 350px;
+				}
+			}
+			@media screen and (max-width:750px) and (orientation:landscape) 
+			{
+				form
+				{
+					position: relative;
+					float: left;
+				}
+				label
+				{
+					padding-top: 5px;
+				}
+			}
+			@media screen and (max-width:480px) and (orientation: portrait)
+			{
+				label 
+				{
+					font-family: Arial;
+					font-size: 8px;
+				}
+				input
+				{
+					font-family: Arial;
+					font-size: 8px;
+					margin-bottom: 5px;
+				}
+				form
+				{
+					position: relative;
+					float: left;
+					margin-left: 5%;
+				}
+				#sadrzaj1
+				{
+					height: 350px;
+				}
+			}
+			
+		</style>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+        <script type="text/javascript" src="js/kzelenik_jquery.js"></script>
+    </head>
+    <body id="b" onload="provjeraSlova(); provjeraLozinke();">
+        <header>
+            <h3 class="marquee"><span style="color: white; padding-top: 5px;">Dobrodošli na stranicu registracije!</span></h3>
+            <img src="slike/logo.png" alt="logo" usemap="#logomap" style=" width:auto; height:auto; box-shadow: 0px 0px 0px;">
+			<map name="logomap">
+				<area shape="rect" coords="0,0,110,100" href="index.html" alt= "Početna stranica" target ="_blank">
+				<area shape="rect" coords="110,0,370,100" href="index.html#autor" alt = "O autoru">
+			</map>
+        </header><br>
+        <nav id="navi">
+			<div>
+                <button onclick="location.href ='index.html'">Početna</button><br>
+                <button onclick="location.href ='proizvod.html'">Opis proizvoda</button><br>
+                <button onclick="location.href ='registracija.html'">Registracija</button><br>
+                <button onclick="location.href ='prijava.html'">Prijava</button><br>
+                <button onclick="location.href ='novi_proizvod.html'">Dodavanje proizvoda</button><br>
+                <button onclick="location.href ='popis_proizvoda.html'">Popis proizvoda</button><br>
+				<button onclick="location.href ='era.html'">Era dijagram</button><br>
+				<button onclick="location.href ='navigacijski.html'">Navigacijski dijagram</button>
+			</div>
+        </nav>
+		<br>
+        <section id="sadrzaj" style="height: 350px;">
+		<p id="greske"></p>
+            <form id="Form1" method="post" name="Form1" action="https://barka.foi.hr/WebDiP/2016/materijali/zadace/ispis_forme.php">
+                <p><label for="ime">Ime:</label>
+                    <input type="text" placeholder="Ime" name="ime" required id="ime"/><br>
+                    <label for="prez">Prezime:</label>
+                    <input type="text" placeholder="Prezime" name="prez" required id="prez"/><br>
+                    <label for="korim">Korisničko ime:</label>
+                    <input type="text" placeholder="Korisničko ime" name="korim" required id="korim"/><br>
+					<label for="mail">Email:</label>
+                    <input type="mail" placeholder="Email" name="mail" required id="mail"/><br>
+                    <label for="pass">Lozinka:</label>
+                    <input type="password" placeholder="Lozinka" name="pass" required id="pass"/><br>
+                    <label for="dpass">Potvrdi lozinku:</label>
+                    <input type="password" placeholder="Potvrda lozinke" name="dpass" required id="dpass"/><br>
+					<label for="drzave">Drzave</label>
+					<input id = "drzave" type="text" name="drzave"  ><br>
+                    <input type="submit" value="Registriraj se"><br>
+					<button type="button" id="xyz" href="#" style="height: 24px; width: 150px; margin-left: 40px;">Učitaj</button>
+					<select id="item" style="width: 300px; margin-left: 123px;">Item</select>
+                </p>
+            </form>
+                  
+        </section>
+        <footer id="foot">
+                <p> Vrijeme potrebno za rješavanje aktivnog dokumenta: 2 sata.</p>
+                <address>
+                    <b>Kontakt:</b><a href="mailto:kzelenik@foi.hr">Krešimir Zelenika</a>
+                </address>
+                <p><small>&copy;</small>2017. K. Zelenika</p>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fregistracija.html">
+					<img src="slike/HTML5.png" alt="HTML validator" style=" width: 100px;">
+				</a>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_02%2Fkzelenik%2Fkzelenik.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img src="slike/CSS3.png" alt="CSS validator" style=" width: 100px;">
+				</a>
+		</footer>
+    </body>
+</html>

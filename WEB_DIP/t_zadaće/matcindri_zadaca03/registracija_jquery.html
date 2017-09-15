@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registracija</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mateo Cindric">
+        <meta name="keywords" content="FOI, WebDiP">
+        <meta name="description" content="Registracija">
+        <link href="css/matcindri.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>	
+        <script type="text/javascript" src="js/matcindri_jquery.js" ></script>
+    </head>
+    <body>
+     <header id="zaglavlje">
+                <h1>Mateo Cindrić</h1>
+                <img src="img/logo.png" alt="FOI logo">                
+        </header>
+        
+         <hr>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li> 
+                <li><a href="prijava.html">Prijava</a></li>
+                <li><a href="registracija.html">Registracija</a></li>
+                <li><a href="registracija_jquery.html">Registracija jquery</a></li>
+                <li><a href="korisnici_jquery.html">Korisnici jquery</a></li>
+                <li><a href="gen_korisnici_jquery.html"> Gen korisnici jquery</a></li>
+            </ul>
+        </nav>
+        
+         <section id="sadrzaj">
+        <h2 style="text-align: center" >Registracija_jquery</h2>  
+        
+         <form id="form2" class="form2" method="post" name="registracija" novalidate action="https://barka.foi.hr/WebDiP/2015/materijali/zadace/ispis_forme.php">
+             <div id="korime_greska"></div>
+             <p> 
+                <label for="ime">Ime: </label>
+                <input type="text" id="ime" name="ime" ><br>
+                <label for="prezime">Prezime: </label>
+                <input type="text" id="prezime" name="prezime" ><br>
+                <label for="korisnickoime">Korisničko ime: </label>
+                <input type="text" id="korisnickoime" name="korisnickoime" size="10" maxlength="20" ><br>
+                <label for="lozinka1">Lozinka: </label>
+                <input type="password" id="lozinka1" name="lozinka1"><br>
+                <label for="lozinka2">Ponovi pozinku: </label>
+                <input type="password" id="lozinka2" name="lozinka2" ><br>
+                <label for="enkripcija">Enkripcija: </label>
+                <keygen name="enkripcija" id="enkripcija"  ><br>
+                <label for="rodendan">Datum rođenja: </label>
+                <input type="number" id="rodendan" name="dan" placeholder="Dan">
+                <input list="mjesec" id="mjesec_rodenja" placeholder="Mjesec" name="mjesec"> 
+                <datalist id="mjesec">
+                  <option value="Siječanj">Siječanj</option>
+                  <option value="Veljača">Veljača</option>
+                  <option value="Ožujak">Ožujak</option>
+                  <option value="Travanj">Travanj</option>
+                  <option value="Svibanj">Svibanj</option>
+                  <option value="Lipanj">Lipanj</option>
+                  <option value="Srpanj">Srpanj</option>
+                  <option value="Kolovoz">Kolovoz</option>
+                  <option value="Rujan">Rujan</option>
+                  <option value="Listopad">Listopad</option>
+                  <option value="Studeni">Studeni</option>
+                  <option value="Prosinac">Prosinac</option> 
+                </datalist> 
+                <input id="godina" name="godina" type="number" placeholder="Godina"><br>
+                <label for="spol">Spol: </label>
+                <select id="spol" name="spol">
+                    <option value="0">Muško</option>
+                    <option value="1">Žensko</option>
+                </select><br>
+                <label for="telefon">Mobilni telefon: </label>
+                <input id="drzava" type="text" name="drzava">
+                <input id="telefon" type="tel" name="telefon"  placeholder="xxx xxxxxxx"><br>
+                <label for="email">Email adresa: </label>
+                <input type="email" id="email" name="email" ><br>
+                <label id="label_robot" for="robot">Dokažite da niste robot: </label> 
+                <input type="checkbox" name="robot" id="robot"> <br>
+                <label for="lokacija">Lokacija: </label><br> 
+                <textarea name="lokacija" id="lokacija" rows="40" cols="100" placeholder="Unos oblika: 46.38;16.34"></textarea><br>
+                <label for="slika">Odaberite sliku: </label>
+                <input type="file" name="slika" id="slika" > <br>
+                <label id="label_obavijesti" for="obavijesti1">Želite li primati obavijesti: </label> 
+                <input name="obavijesti" id="obavijesti1" type="radio" value="1"> Da
+                <input name="obavijesti" id="obavijesti2" type="radio" value="2"> Ne <br>
+                <input id="submit" type="submit" value=" Registriraj se ">
+             </p>
+         </form>
+        <div id="greske_registracija" ></div>
+         </section>
+        
+        <footer id="podnozje">
+                <hr>
+                <p>Vrijeme potrebno za rješavanje aktivnog dokumenta je 20 sati.</p>
+                <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmatcindri%2Fregistracija_jquery.html" target="_blank"><img src="img/HTML5.png" alt="html5" width="50" height="50"></a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2015%2Fzadaca_03%2Fmatcindri%2Fregistracija_jquery.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="img/CSS3.png" alt="css3" width="50" height="50"></a></p>
+                <address>Kontakt: <a href="mailto:matcindri.foi.hr" target="_blank">Mateo Cindrić</a></address><br>
+         </footer>
+    </body>
+</html>

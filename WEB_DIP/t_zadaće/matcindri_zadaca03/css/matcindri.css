@@ -1,0 +1,267 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2016, 9:33:37 AM
+    Author     : grupa_6
+*/
+
+.zelena { background: LawnGreen;
+         border-color: green;
+         border-width:2px;}
+
+.crvena { background: Tomato;
+          border-color: red;
+          border-width:2px;}
+
+.plava { background: LightSkyBlue;
+          border-color: blue;
+          border-width:2px;}
+
+ body 
+ { 
+     background: #a0a0a0; 
+     color: #000000; 
+     font-family: "courier"; 
+     margin:auto;
+     width:90%;
+     font-size: 16px;
+ }
+ 
+ h1 
+ { 
+     color: #000000;
+     margin: 1em 0em;
+ }
+ 
+ h2 
+ { 
+     color: #000000;
+     margin: 1em 0em;
+ }
+ 
+ p 
+ { 
+     font-style: italic; 
+     background: none; 
+ }
+ 
+ header
+ {
+ background-color: #808080;
+ text-align: center;
+ }
+ 
+ a:link 
+ { 
+     color: #000000; 
+ }
+ 
+ ul#teme li a:visited 
+ { 
+     color: #0000FF ;
+ }
+ 
+ a:hover 
+ { 
+     color: #FF0000; 
+     font-size: 100% 
+ }
+
+caption.tablica1
+{
+    color: #000000;
+    background-color: #808080;  
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+
+tr.tablica1_zaglavlje
+{
+    background-color: #FFDEAD;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tbody.tablica1_sadrzaj
+{
+    color: #008000;
+    background-color: #FFFFF0;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #000000;
+}
+
+td:hover, th:hover
+{
+    background-color:  	#FFA500;
+}
+
+form
+{
+position: absolute;
+margin: 5mm;
+padding: 5mm;
+border-radius: 5mm;
+background-color: #B0C4DE;
+color: 	#191970;
+font-size: 16px;
+width: 50%;
+text-align:right;
+}
+
+form input
+{
+    color:#0000FF;
+    padding: 4px;
+}
+
+#sadrzaj_prijava
+{
+    float:left;
+    width:60%;
+    margin: 20px;
+    height:450px;
+    margin-top:-10px;
+}
+
+nav ul
+{
+list-style: none; 
+line-height: 1;
+padding: 0;
+margin: 0;
+width: 140px;
+}
+
+nav > ul li a  
+{
+    display:block;
+    color:#000000;
+    background: #808080;
+    text-transform:uppercase;
+    border-top-style: dotted;
+    border-width:1px;
+    border-color:#000000;
+    padding: 10px 20px;
+}
+
+nav > ul li a:hover
+{
+  color: #FFFFFF;
+  background-color:#0000FF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: dotted;
+}
+
+nav
+{
+    float:left;
+}
+
+#sadrzaj
+{
+    float:left;
+    width:70%;
+    margin: 20px;
+    margin-top:-10px;
+}
+
+figure
+{
+display: inline-block;  
+background-color: #DCDCDC;
+border-radius: 10px;
+padding: 1em 0.5em;
+border-style: solid;
+border-width: 3px;
+margin: 1em 1em;
+}
+
+figcaption
+{
+    color: #191970;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+video
+{
+margin: 0.5em 0.5em;
+border: 5px Solid #00008B;
+}
+
+audio
+{
+margin: 0.5em 0.5em;
+border: 5px Solid #00008B;
+}
+
+
+dl dd
+{
+    color: #FFFFFF;
+    font-style: italic;
+    font-family: "Calibri";
+    font-size: 16px;
+}
+
+dl dt
+{
+    color: #B22222;
+    font-size: 18px;
+}
+
+pre {
+    margin: 1em 1em;
+    color: #FFFFFF;
+    text-align: justify;
+    white-space: normal;
+    font-size: 16px;
+} 
+
+form.form2
+{
+position:relative;
+margin: 10px;
+padding: 10px;
+border-radius: 20px;
+background-color: #B0C4DE; 
+width: 97%;
+font-size: 16px;
+color: #191970;
+text-align:left;
+}
+
+form.form2 input
+{
+    color:#0000FF;
+    padding: 4px;
+}
+
+ footer
+ {
+ background-color: #808080;
+ text-align: center;
+ clear:both;
+ }
+ 
+ #greske_prijava{
+margin-top:480px;     
+margin-left:150px;
+ }

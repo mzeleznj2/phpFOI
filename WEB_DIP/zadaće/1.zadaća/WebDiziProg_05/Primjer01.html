@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FOI - Web dizajn i programiranje : Obrasci - Primjer broj 01</title>
+        <meta charset="utf-8">
+    </head>
+    <body>  
+
+        <form id="form1" method="post" name="form1" action="http://barka.foi.hr/WebDiP/2016/materijali/zadace/ispis_forme.php">
+            <p><label for="korime">Korisničko ime: </label>
+                <input type="text" id="korime" name="korime" size="15" maxlength="15" pattern=".{6}" placeholder="korisničko ime" autofocus="autofocus" required="required"><br>
+                <label for="lozinka1">Lozinka: </label>
+                <input type="password" id="lozinka1" name="lozinka1" size="15" maxlength="15" pattern=".{6}" placeholder="lozinka" required="required"><br>
+                <label for="lozinka2">Ponovi pozinku: </label>
+                <input type="password" id="lozinka2" name="lozinka2" size="15" maxlength="15" pattern=".{6}" placeholder="lozinka" required="required"><br>                
+                <label for="ime">Ime: </label>
+                <input type="text" id="ime" name="ime" size="15" maxlength="15" placeholder="Ime" required="required"><br>
+                <label for="prez">Prezime: </label>
+                <input type="text" id="prez" name="prez" size="25" maxlength="25" placeholder="Prezime" required="required"><br>
+                <label for="email">Email adresa: </label>
+                <input type="email" id="email" name="email" size="35" maxlength="35" placeholder="ime.prezime@posluzitelj.xxx" required="required"><br>
+                <label for="webadresa">Email adresa: </label>
+                <input type="url" id="webadresa" name="webadresa" size="65" maxlength="65" placeholder="http://adresa.posluzitelj.xxx"><br>
+                <label for="telefon">Telefon: </label>
+                <input type="tel" id="telefon" name="telefon" size="25" maxlength="25" placeholder="+385-xx-yyy-zzz"><br>
+                <label for="danRod">Dan rođenja: </label>
+                <input type="date" id="danRod" name="danRod" required="required"><br>
+                <label for="visina">Visina: </label>
+                <input type="range" id="visina" name="visina" min="80" max="240" value="180"><br>
+                <label for="preglednik">Koristi preglednike: </label>
+                <select id="preglednik" multiple="multiple" size="3">
+                    <option value="-1" selected="selected">== Odaberi preglednike ==</option>
+                    <option value="0">Internet Explorer</option>
+                    <option value="1">Firefox</option>
+                    <option value="2">Chrome</option>
+                    <option value="3">Opera</option>
+                    <option value="4">Safari</option>
+                </select><br>
+                <label for="zupanija">Županija: </label>
+                <select id="zupanija">
+                    <option value="-1" selected="selected">== Odaberi županiju ==</option>
+                    <optgroup label="Sjeverna Hrvatska">
+                        <option value="1000007" >BJELOVARSKO-BILOGORSKA</option>
+                        <option value="1000006" >KOPRIVNIČKO-KRIŽEVAČKA</option>
+                        <option value="1000002" >KRAPINSKO-ZAGORSKA</option>
+                        <option value="1000020" >MEĐIMURSKA</option>
+                        <option value="1000005" >VARAŽDINSKA</option>
+                    </optgroup>
+                    <optgroup label="Središnja Hrvatska">
+                        <option value="1000022" >GRAD ZAGREB</option>
+                        <option value="1000004" >KARLOVAČKA</option>
+                        <option value="1000003" >SISAČKO-MOSLAVAČKA</option>
+                        <option value="1000001" >ZAGREBAČKA</option>
+                    </optgroup>
+                    <optgroup label="Zapadna Hrvatska">
+                        <option value="1000018" >ISTARSKA</option>
+                        <option value="1000009" >LIČKO-SENJSKA</option>
+                        <option value="1000008" >PRIMORSKO-GORANSKA</option>
+                    </optgroup>
+                    <optgroup label="Istočna Hrvatska">
+                        <option value="1000012" >BRODSKO-POSAVSKA</option>
+                        <option value="1000014" >OSJEČKO-BARANJSKA</option>
+                        <option value="1000011" >POŽEŠKO-SLAVONSKA</option>
+                        <option value="1000010" >VIROVITIČKO-PODRAVSKA</option>
+                        <option value="1000016" >VUKOVARSKO-SRIJEMSKA</option>
+                    </optgroup>
+                    <optgroup label="Južna Hrvatska">
+                        <option value="1000019" >DUBROVAČKO-NERETVANSKA</option>
+                        <option value="1000015" >ŠIBENSKO-KNINSKA</option>
+                        <option value="1000017" >SPLITSKO-DALMATINSKA</option>
+                        <option value="1000013" >ZADARSKA</option>
+                    </optgroup>
+                </select><br>                
+                Životopis: <br>
+                <textarea name="zivotopis" rows="10" cols="60" maxlength="580" placeholder="Kratak životopis"></textarea><br>
+                <input id="submit1" type="submit" value=" Registriraj se ">
+                <input id="reset1" type="reset" value=" Inicijaliziraj "> </p>
+        </form>
+    </body>
+</html>

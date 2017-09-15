@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Jquery </title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <style>
+  #krug{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background-color:green;
+  margin: 10px;
+  }
+ 
+  
+  </style>
+
+ </head>
+
+<body>
+
+<div id="krug"> </div>
+
+<p> Neki tekst. </p>
+<script type="text/javascript">
+
+$("#krug").hover(function(){
+
+$("p").html("Tekst se promijenio.");
+
+})
+        
+</script>
+
+</body>
+</html>

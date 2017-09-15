@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Proizvod</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Proizvod" />
+        <meta name="kljucne rijeci" content="zadaća 1, proizvod" />
+        <meta name="datum izrade" content="19.03.17." />
+        <meta name="autor" content="Maja Puh" />
+        <link rel="stylesheet" type="text/css" href="css/majpuh.css" />
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
+        <script type="text/javascript" src="js/majpuh_jquery.js"></script>
+
+    </head>
+    <body>
+        <div class="banner">
+            <header>
+                <div class="he">
+                    <h2>Proizvod</h2></div>
+                <div class="logo">
+                    <figure>
+                        <img src="slike/logo.png" width="300" height="100" alt="LOGO" usemap="#mapa1" />
+                        <map name="mapa1"> 
+                            <area href="index.html" alt="pravokutnik" shape="rect" coords="0,0,150,100" 
+                                  target="a" />
+                            <area href="#omiljeni_pr" alt="pravokutnik" shape="rect" coords="150,0,300,100" />
+                        </map>
+                        <figcaption>Logo</figcaption>
+                    </figure>
+                </div>
+                <div class="break"></div>
+
+            </header>
+            <nav>  
+                <div class="topmenu">
+                    <ul> 
+                        <li>
+                            <a href="index.html">Početna stranica</a>
+                        </li>
+                        <li>
+                            <a href="novi_proizvod.html">Novi proizvod</a>
+                        </li>
+                        <li>
+                            <a href="popis_proizvoda.html">Popis proizvoda</a>
+                        </li>
+                        <li>
+                            <a href="prijava.html">Prijava</a>
+                        </li>
+                        <li>
+                            <a href="proizvod.html">Proizvod</a>
+                        </li>
+                        <li>
+                            <a href="registracija.html">Registracija</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section>
+            <h2>Omiljeni proizvod</h2>
+            <div id="lista_om">
+                <dl>
+                    <dt>Naziv proizvoda</dt>
+                    <dd>Autobiografija Brucea Springsteena</dd>
+                    <dt>Opis proizvoda</dt>
+                    <dd>Biografija poznatog glazbenika, izašla u kasnijim godinama njegovog života koja govori 
+                        o bogatom i nevjerojatnom koncertnom putu, te raznim usponima i padovima tijekom istog.</dd>
+                    <dt>Datum proizvodnje</dt>
+                    <dd>listopad, 2016</dd>        
+                    <dt>Vrijeme proizvodnje</dt>
+                    <dd>20:16</dd> 
+                    <dt>Količina proizvoda</dt>
+                    <dd>50</dd>
+                    <dt>Težina proizvoda</dt>
+                    <dd>0,5 kg</dd> 
+                    <dt>Kategorija proizvoda</dt>
+                    <dd>Knjiga</dd> 				
+                </dl>
+            </div>
+            <div id="omiljeni_pr">
+                <figure>
+                    <img class= "omiljeni_slike" alt="prva slika" id ="om1" src="slike/bruce3.jpg" />
+                    <figcaption>Bruce na koncertu</figcaption>
+                </figure>
+                <figure>
+                    <img class= "omiljeni_slike" alt="druga slika" id ="om2" src="slike/bruce2.jpg" />
+                    <figcaption>Bruce Springsteen</figcaption>
+                </figure>
+                <figure>
+                    <img class= "omiljeni_slike" alt="treca slika" id ="om3" src="slike/bruce1.jpg" />
+                    <figcaption>Naslovnica knjige</figcaption>
+                </figure>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <div class="fo">
+                <p>Vrijeme za izradu zadaće: <i>1,5 sat</i></p>
+                <figure class="slika_fo1">
+                    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_01%2Fmajpuh%2Fproizvod.html">
+                        <img src="slike/HTML5.png" width="100" alt="HTML 5 validator"/></a>
+                    <figcaption>HTML 5 validator</figcaption>
+                </figure>
+                <figure id="slika_fo2">
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_01%2Fmajpuh%2Fproizvod.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+                        <img src="slike/CSS3.png" width="100" alt="CSS 3 validator"/></a>
+                    <figcaption>CSS 3 validator</figcaption>
+                </figure>
+                <div class="break"></div>
+                <address>
+                    <strong>Kontakt:</strong> <a href="mailto:majpuh@majpuh.hr">Maja Puh</a>
+                </address>
+                <p><small>&copy;</small>2017-M.P.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
+
+
